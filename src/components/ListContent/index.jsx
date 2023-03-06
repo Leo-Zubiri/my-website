@@ -3,7 +3,7 @@ import './style.css';
 
 export default function ListContent({children}) {
   return (
-    <div className="container">
+    <div className="list-container">
         {children}
     </div>
   )
