@@ -1,8 +1,15 @@
 import React from 'react'
-import styles from './styles.module.css'
+import './style.css';
 
-export default function ContentBox() {
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+export default function ContentBox({topic}) {
+
+  const {name,path,img} = topic;
+
   return (
-    <div>ContentBox</div>
+    <a className='box' href={useBaseUrl(path)}>
+      <img src={useBaseUrl(img)} alt={`Topic: ${name}`} />
+    </a>
   )
 }

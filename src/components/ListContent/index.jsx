@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from './styles.module.css';
+import './style.css';
 
 export default function ListContent({children}) {
   return (
-    <div className={styles.container}>
+    <div className="container">
         {children}
     </div>
   )

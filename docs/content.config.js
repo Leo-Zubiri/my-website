@@ -1,12 +1,12 @@
 export const topics = [
     {
         name: 'Laravel',
-        img: '',
-        path: ''
+        img: '/img/Laravel.jpg',
+        path: '/docs/intro'
     },
     {
         name: 'React',
-        img: '',
-        path: ''
+        img: '/img/react.png',
+        path: '/docs'
     },
 ];
