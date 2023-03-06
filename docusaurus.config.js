@@ -136,8 +136,9 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: require('prism-react-renderer/themes/vsDark'),
+        darkTheme: require('prism-react-renderer/themes/vsDark'),
+        additionalLanguages: ['php','php-extras'],
       },
     }),
 

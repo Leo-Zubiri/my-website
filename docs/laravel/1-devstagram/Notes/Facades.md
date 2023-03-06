@@ -1,0 +1,1 @@
+https://laravel-com.translate.goog/docs/9.x/facades?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es-419
