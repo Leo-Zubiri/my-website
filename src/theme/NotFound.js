@@ -2,7 +2,7 @@ import React from 'react';
 import Translate, {translate} from '@docusaurus/Translate';
 import {PageMetadata} from '@docusaurus/theme-common';
 import Layout from '@theme/Layout';
-import Loader from '../components/Loader';
+import Loader from '../components/Loader'
 
 export default function NotFound() {
   return (
@@ -13,11 +13,14 @@ export default function NotFound() {
           message: 'Page Not Found',
         })}
       />
-      <Layout >
-        <div class="docPage__5DB">
-          <Loader />
-        </div>
-        
+      <Layout>
+        <main className="container margin-vert--xl">
+          <div className="row">
+            
+            <Loader />
+            
+          </div>
+        </main>
       </Layout>
     </>
   );
