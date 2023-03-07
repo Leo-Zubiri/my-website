@@ -71,6 +71,11 @@ const config = {
           src: 'img/code.svg',
         },
         items: [
+          {
+            to: '/portfolio',
+            label: 'Portfolio',
+            position: 'left'
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             to: '/notes',
