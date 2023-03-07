@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My DevSite',
-  tagline: 'It is the true power of habits, small changes, big rewards.',
+  tagline: "It's the true power of habits, small changes, big rewards.",
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -68,15 +68,9 @@ const config = {
         title: 'My DevSite',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/code.svg',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             to: '/notes',
@@ -128,7 +122,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Leo-Zubiri',
               },
             ],
           },
