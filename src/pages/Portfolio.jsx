@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 
 export default function Hello() {
   return (
-    <Layout title="Hello" description="Hello React Page">
+    <Layout title="My Portfolio" description="Leo Zubiri Portfolio">
       <div
         style={{
           display: 'flex',
