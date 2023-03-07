@@ -14,27 +14,8 @@ export default function NotFound() {
         })}
       />
       <Layout >
-
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '70vh',
-            fontSize: '20px',
-            flexDirection: 'column',
-            gap: 20
-          }}>
-
+        <div class="docPage__5DB">
           <Loader />
-
-          <p>
-            <Translate
-              id="theme.NotFound.p1"
-              description="The first paragraph of the 404 page">
-              Loading...
-            </Translate>
-          </p>
         </div>
         
       </Layout>

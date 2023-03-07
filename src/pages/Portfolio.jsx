@@ -17,15 +17,7 @@ export default function Hello() {
             gap: 20
           }}>
 
-          <Loader />
-
-          <p>
-            <Translate
-              id="theme.NotFound.p1"
-              description="The first paragraph of the 404 page">
-              Coming soon...
-            </Translate>
-          </p>
+          <Loader text={"Coming soon..."}/>
         </div>
     </Layout>
   );

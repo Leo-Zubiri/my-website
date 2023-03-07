@@ -1,3 +1,14 @@
+.hamsterContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 20px;
+  flex-direction: column;
+  width: 100%;
+
+}
+
 .wheel-and-hamster {
     --dur: 1s;
     position: relative;
