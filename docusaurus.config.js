@@ -84,7 +84,7 @@ const config = {
             position: 'left'
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Leo-Zubiri',
             label: 'GitHub',
             position: 'right',
           },
