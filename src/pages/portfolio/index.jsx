@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import ListContent from '../components/ListContent';
-import ProjectBox from '../components/ProjectBox';
+import ListContent from '../../components/ListContent';
+import ProjectBox from '../../components/ProjectBox';
 
 export default function Hello() {
   return (
@@ -12,6 +12,7 @@ export default function Hello() {
           title="FRONTEND"
           desc="My Frontend challenges, projects, design ideas and more..."
           tools={[]}
+          pageUrl="/porfolio/frontend"
         />
 
         <ProjectBox 
@@ -19,6 +20,7 @@ export default function Hello() {
           title="BACKEND"
           desc="Authentication, ORM, endpoints, API, and more..."
           tools={[]}
+          pageUrl="/porfolio/backend"
         />
 
         <ProjectBox 
@@ -26,6 +28,7 @@ export default function Hello() {
           title="FULLSTACK"
           desc="All my Full Stack projects"
           tools={[]}
+          pageUrl="/porfolio/fullstack"
         />
 
         <ProjectBox 
@@ -33,6 +36,7 @@ export default function Hello() {
           title="Scripts"
           desc="Python Scripting, Excel VBA solutions and more..."
           tools={[]}
+          pageUrl="/porfolio/scripts"
         />
 
       </ListContent>
