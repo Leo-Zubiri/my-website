@@ -10,21 +10,28 @@ export default function Hello() {
         <ProjectBox 
           img="/img/front.png"
           title="FRONTEND"
-          desc="My Frontend challenges, projects and more"
+          desc="My Frontend challenges, projects, design ideas and more..."
           tools={[]}
         />
 
         <ProjectBox 
           img="/img/backend.png"
           title="BACKEND"
-          desc=""
+          desc="Authentication, ORM, endpoints, API, and more..."
           tools={[]}
         />
 
         <ProjectBox 
           img="/img/fullstack.png"
-          title="FULL STACK"
-          desc=""
+          title="FULLSTACK"
+          desc="All my Full Stack projects"
+          tools={[]}
+        />
+
+        <ProjectBox 
+          img="/img/scripting.png"
+          title="Scripts"
+          desc="Python Scripting, Excel VBA solutions and more..."
           tools={[]}
         />
 

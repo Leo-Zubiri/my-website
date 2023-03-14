@@ -1,3 +1,4 @@
+
 .project-box{
     background-color: white;
     width: 30vw;
@@ -13,10 +14,15 @@
 .title{
     font-weight: bold;
     color: #485f66;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .desc{
-    color: #485f66;
+    text-align: center;
+    color: #5e6061;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 

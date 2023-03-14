@@ -5,6 +5,11 @@
  */
 
 /* You can override the default Infima variables here. */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&display=swap');
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -15,6 +20,7 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  font-family: 'Heebo', sans-serif;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -28,3 +34,14 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+
+
+/*
+Fonts
+
+font-family: 'Heebo', sans-serif;
+font-family: 'JetBrains Mono', monospace;
+font-family: 'Roboto', sans-serif;
+font-family: 'Brygada 1918', serif;
+*/

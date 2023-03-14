@@ -14,13 +14,13 @@ function HomepageHeader() {
   return (
     <header className="heroBanner">
       <div className="titleContainer">
-        <h1 className="slide-in-elliptic-top-fwd">{siteConfig.title}</h1>
+        <h1 className="slide-in-elliptic-top-fwd title-devsite">{`< ${siteConfig.title} />`}</h1>
 
         <img src={useBaseUrl("/img/logo2.png")} alt="My perfil photo"  
           className='scale-up-center main_perfil_photo'
         />
 
-        <h2 className="fade-in"> {siteConfig.tagline} </h2>
+        <h2 className="fade-in italic-phrase"> {siteConfig.tagline} </h2>
       </div>
     </header>
   );

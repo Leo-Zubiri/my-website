@@ -8,6 +8,13 @@
 padding: 40px;
 }
 
+.italic-phrase{
+  font-family: 'Brygada 1918', serif;
+}
+.title-devsite{
+  font-family: 'JetBrains Mono', monospace;
+}
+
 .heroBanner {
   padding: 40px;
   text-align: center;
