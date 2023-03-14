@@ -8,7 +8,7 @@ export default function ContentBox({topic}) {
   const {name,path,img} = topic;
 
   return (
-    <a className='box' href={useBaseUrl(path)}>
+    <a className='box fade-in' href={useBaseUrl(path)}>
       <img src={useBaseUrl(img)} alt={`Topic: ${name}`} />
     </a>
   )
