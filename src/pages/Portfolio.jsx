@@ -1,24 +1,34 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import Loader from '../components/Loader';
-import Translate, {translate} from '@docusaurus/Translate';
+import ListContent from '../components/ListContent';
+import ProjectBox from '../components/ProjectBox';
 
 export default function Hello() {
   return (
-    <Layout title="My Portfolio" description="Leo Zubiri Portfolio">
-      <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '70vh',
-            fontSize: '20px',
-            flexDirection: 'column',
-            gap: 20
-          }}>
+    <Layout title="My Notes" description="My learning documentation">
+      <ListContent> 
+        <ProjectBox 
+          img="/img/front.png"
+          title="FRONTEND"
+          desc="My Frontend challenges, projects and more"
+          tools={[]}
+        />
 
-          <Loader text={"Coming soon..."}/>
-        </div>
+        <ProjectBox 
+          img="/img/backend.png"
+          title="BACKEND"
+          desc=""
+          tools={[]}
+        />
+
+        <ProjectBox 
+          img="/img/fullstack.png"
+          title="FULL STACK"
+          desc=""
+          tools={[]}
+        />
+
+      </ListContent>
     </Layout>
   );
 } 

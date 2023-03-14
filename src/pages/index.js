@@ -20,7 +20,7 @@ function HomepageHeader() {
           className='scale-up-center main_perfil_photo'
         />
 
-        <h2 className="expand"> {siteConfig.tagline} </h2>
+        <h2 className="fade-in"> {siteConfig.tagline} </h2>
       </div>
     </header>
   );
@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Layout
       title={`About Me`}
-      description="Description will go into a meta tag in <head />">
+      description="Leo Zubiri Dev">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

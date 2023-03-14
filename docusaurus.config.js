@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My DevSite',
-  tagline: "It's the true power of habits, small changes, big rewards.",
+  tagline: `"It's the true power of habits, small changes, big rewards."`,
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
