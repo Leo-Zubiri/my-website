@@ -5,8 +5,13 @@
 
 
 .titleContainer{
-padding: 40px;
-}
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  }
 
 .italic-phrase{
   font-family: 'Brygada 1918', serif;

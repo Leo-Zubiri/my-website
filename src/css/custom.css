@@ -21,6 +21,9 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   font-family: 'Heebo', sans-serif;
+  --background-image: url("/img/background/mac-light.jpg");
+  --glass-effect: rgba( 255, 255, 255, 0.6 );
+  
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -33,6 +36,10 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  font-family: 'Heebo', sans-serif;
+  --background-image: url("/img/background/macbook.jpg");
+  --glass-effect: rgba( 0, 0, 0, 0.6);
+
 }
 
 
@@ -45,6 +52,45 @@ font-family: 'JetBrains Mono', monospace;
 font-family: 'Roboto', sans-serif;
 font-family: 'Brygada 1918', serif;
 */
+
+.myBanner{
+  height: 70vh;
+  align-items: center;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment:fixed;
+
+}
+
+.glass{
+  background: var(--glass-effect);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1.5px );
+  -webkit-backdrop-filter: blur( 1.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+@media screen and (max-width: 640px) {
+ .myBanner{
+    height: 80vh;
+    
+ }
+  
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+ 
+}
+
+@media screen and (min-width: 1280px) {
+  .myBanner{
+    height: 75vh;
+ }
+} 
 
 
 /* Animations */
@@ -226,7 +272,7 @@ font-family: 'Brygada 1918', serif;
  * animation fade-in
  * ----------------------------------------
  */
- @-webkit-keyframes fade-in {
+ @-webkit-keyframes fade_in {
   0% {
     opacity: 0;
   }
@@ -234,7 +280,7 @@ font-family: 'Brygada 1918', serif;
     opacity: 1;
   }
 }
-@keyframes fade-in {
+@keyframes fade_in {
   0% {
     opacity: 0;
   }
@@ -244,9 +290,9 @@ font-family: 'Brygada 1918', serif;
 }
 
 
-.fade-in {
-	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
-	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+.fade_in {
+	-webkit-animation: fade_in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+	        animation: fade_in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
 }
 
 
