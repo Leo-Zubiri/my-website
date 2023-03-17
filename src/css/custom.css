@@ -60,16 +60,20 @@ font-family: 'Brygada 1918', serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   /*background-attachment:fixed;*/
-
+  padding: 0px;
+  margin: 0px;
 }
 
 .glass{
   background: var(--glass-effect);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  box-shadow: 0 8px 32px 0 rgba( 10, 10, 135, 0.4 );
   backdrop-filter: blur( 1.5px );
   -webkit-backdrop-filter: blur( 1.5px );
-  border-radius: 10px;
+  
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
@@ -82,7 +86,7 @@ font-family: 'Brygada 1918', serif;
 
 @media screen and (max-width: 640px) {
  .myBanner{
-    height: 80vh;
+    height: 95vh;
     
  }
   
@@ -90,13 +94,13 @@ font-family: 'Brygada 1918', serif;
 
 @media screen and (min-width: 640px) and (max-width: 1280px) {
   .myBanner{
-    height: 80vh;
+    height: 95vh;
  }
 }
 
 @media screen and (min-width: 1280px) {
   .myBanner{
-    height: 80vh;
+    height: 95vh;
  }
 } 
 

@@ -12,7 +12,7 @@ import './index.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className="heroBanner myBanner">
+    <header className="myBanner fade-in">
       <div className="titleContainer glass">
         <h1 className="slide-in-elliptic-top-fwd title-devsite">{`< ${siteConfig.title} />`}</h1>
 
