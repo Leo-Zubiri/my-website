@@ -21,17 +21,12 @@
 }
 
 .heroBanner {
-  padding: 40px;
+  padding: 1rem;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
 
 .buttons {
   display: flex;

@@ -60,7 +60,7 @@ font-family: 'Brygada 1918', serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment:fixed;
+  /*background-attachment:fixed;*/
 
 }
 
@@ -83,12 +83,14 @@ font-family: 'Brygada 1918', serif;
 }
 
 @media screen and (min-width: 640px) and (max-width: 1280px) {
- 
+  .myBanner{
+    height: 80vh;
+ }
 }
 
 @media screen and (min-width: 1280px) {
   .myBanner{
-    height: 75vh;
+    height: 80vh;
  }
 } 
 
