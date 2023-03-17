@@ -73,6 +73,12 @@ font-family: 'Brygada 1918', serif;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.pattern{
+  background-image: url('/img/pattern.png');
+  background-repeat: repeat;
+  
+}
+
 
 @media screen and (max-width: 640px) {
  .myBanner{

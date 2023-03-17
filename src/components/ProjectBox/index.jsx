@@ -14,7 +14,7 @@ export default function ProjectBox({
   }
 
   return (
-    <div className='project-box fade-in ' 
+    <div className='project-box fade-in glass' 
       onClick={redirect} 
     >
         <img src={useBaseUrl(img)} alt={`${title} image`}/>

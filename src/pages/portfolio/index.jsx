@@ -6,6 +6,8 @@ import ProjectBox from '../../components/ProjectBox';
 export default function Hello() {
   return (
     <Layout title="My Notes" description="My learning documentation">
+      <div className='pattern'>
+
       <ListContent> 
         <ProjectBox 
           img="/img/front.png"
@@ -40,6 +42,7 @@ export default function Hello() {
         />
 
       </ListContent>
+      </div>
     </Layout>
   );
 } 
