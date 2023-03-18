@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Head from '@docusaurus/Head';
 
 import './index.css';
 
@@ -21,6 +22,12 @@ function HomepageHeader() {
         />
 
         <h2 className="fade_in italic-phrase"> {siteConfig.tagline} </h2>
+
+        <Link
+            className="button button--secondary button--lg  fade_in"
+            to="#me">
+           ABOUT ME ⏬ 
+        </Link>
       </div>
     </header>
   );
@@ -32,10 +39,18 @@ export default function Home() {
     <Layout
       title={`About Me`}
       description="Leo Zubiri Dev">
+      <Head>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+      </Head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
       </main>
+
     </Layout>
   );
 }

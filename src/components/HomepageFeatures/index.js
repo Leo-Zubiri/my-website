@@ -2,6 +2,8 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 const FeatureList = [
   {
     title: 'Easy to Use',
@@ -51,6 +53,14 @@ function Feature({Svg, title, description}) {
 
 export default function HomepageFeatures() {
   return (
+    <>
+
+    <div id='me'  data-aos="zoom-in">
+      <img src={useBaseUrl("/img/logo2.png")} alt="My perfil photo"  
+          className='scale-up-center main_perfil_photo'
+      />
+    </div>
+
     <section className={styles.features}>
       <div className="container">
         <div className="row">
@@ -60,5 +70,6 @@ export default function HomepageFeatures() {
         </div>
       </div>
     </section>
+    </>
   );
 }
