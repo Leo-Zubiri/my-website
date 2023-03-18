@@ -6,12 +6,16 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import Head from '@docusaurus/Head';
+
+// importing aos
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 import './index.css';
-
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  
   return (
     <header className="myBanner fade-in">
       <div className="titleContainer glass">
@@ -35,17 +39,15 @@ function HomepageHeader() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <Layout
       title={`About Me`}
       description="Leo Zubiri Dev">
-      <Head>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
-      </Head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
