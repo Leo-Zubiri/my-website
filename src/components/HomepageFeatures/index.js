@@ -55,10 +55,17 @@ export default function HomepageFeatures() {
   return (
     <>
 
-    <div id='me'  data-aos="zoom-in">
-      <img src={useBaseUrl("/img/logo2.png")} alt="My perfil photo"  
-          className='scale-up-center main_perfil_photo'
-      />
+    <div id='me' className='me-container' data-aos="zoom-in">
+      <h3 className='font-mono me-title'>🚀 Hi I'm Zub! 🚀</h3>
+      <div className='me-presentation'>
+        <img src={useBaseUrl("/img/me.jpg")} alt="My perfil photo"  
+            className='scale-up-center main_perfil_photo circle-image'
+        />
+        <div className="text--center padding-horiz--md">
+          <h3 className={styles.monofont}>Software Developer</h3>
+          <p className='font-mono me-desc'> My name is Leo Zubiri, I'm looking to grow alongside my colleagues, to face challenges, learn a lot and get the best version of myself.</p>
+        </div>
+      </div>
     </div>
 
     <section className={styles.features}>

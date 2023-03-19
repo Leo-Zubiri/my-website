@@ -28,9 +28,9 @@ function HomepageHeader() {
         <h2 className="fade_in italic-phrase"> {siteConfig.tagline} </h2>
 
         <Link
-            className="button button--secondary button--lg  fade_in"
+            className="button button--lg fade_in glass text-color font-mono"
             to="#me">
-           ABOUT ME ⏬ 
+           ABOUT ME ⏩
         </Link>
       </div>
     </header>

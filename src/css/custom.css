@@ -23,7 +23,8 @@
   font-family: 'Heebo', sans-serif;
   --background-image: url("/img/background/mac-light.jpg");
   --glass-effect: rgba( 255, 255, 255, 0.6 );
-  
+  --glass-effect-inverse: rgba( 0, 0, 0, 0.6);
+  --text-color: #000000;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -39,7 +40,8 @@
   font-family: 'Heebo', sans-serif;
   --background-image: url("/img/background/macbook.jpg");
   --glass-effect: rgba( 0, 0, 0, 0.6);
-
+  --glass-effect-inverse: rgba( 255, 255, 255, 0.6 );
+  --text-color: #ffff;
 }
 
 
@@ -58,6 +60,36 @@ font-family: 'Brygada 1918', serif;
   display: flex; 
   align-items: center;
   justify-content: center;
+
+}
+
+.circle-image{
+  border-radius: 30%;
+}
+
+.me-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+}
+
+.me-presentation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.font-mono{
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.me-title{
+  font-size: 2rem;
+}
+
+.me-desc{
+  max-width: 500px;
 }
 
 
@@ -87,6 +119,15 @@ font-family: 'Brygada 1918', serif;
   -webkit-backdrop-filter: blur( 1.5px );
   
   border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.text-color{
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.text-color:hover{
+  color: #32ac79;
 }
 
 .pattern{
