@@ -6,32 +6,35 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Education',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        I studied Computer Systems Engineering at the "Universidad Autónoma de Tamaulipas".
+        A great experience in the way of my professional preparation, friends, colleagues and teachers, good people who inspire me
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'My Skill Set',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Nowadays all my main skills are into the full stack web development, 
+        React, NodeJS, SQL and more. Regardless of this, I always enjoy being in different development environments, 
+        today I could be using python 🐍 and tomorrow my first programming language, Java☕  
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'About my website',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        I made this site as a way to collect all I enjoy as a Developer. 
+        I chose Docusaurus (static site generator) to use React, and store all my markdown notes
+        as documentation. All small things that I have worked and learned are still building results like this!
+        ⚛️
       </>
     ),
   },

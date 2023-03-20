@@ -129,7 +129,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Devsite By Leo Zubiri. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} - My Devsite By Leo Zubiri`,
       },
       prism: {
         theme: require('prism-react-renderer/themes/vsDark'),
