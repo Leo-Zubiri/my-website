@@ -1,6 +1,8 @@
 # Node JS
 
-Utilizar JavaScript desde el lado del servidor, es decir para el backend.
+![]('/img/../../../../static/img/node.png)
+
+Utilizar JavaScript desde el lado del servidor, es decir, para el backend.
 
 ## Que se puede hacer con Node?
 

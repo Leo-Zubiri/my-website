@@ -14,4 +14,9 @@ export const topics = [
         img: '/img/react.png',
         path: '/docs'
     },
+    {
+        name: 'Node JS',
+        img: '/img/node.png',
+        path: '/docs/nodejs'
+    },
 ];
