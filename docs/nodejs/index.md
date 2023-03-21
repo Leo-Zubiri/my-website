@@ -54,3 +54,26 @@ Si es un instrucción directa se ejecuta, si es una función especial como setTi
 Cuando termina la pila de procesos se pasa a los Node Apis para ver cuales estan listos y pasarlo a la cola de callbacks
 
 La pila de procesos junto con el main puede terminar antes que incluso las otras dos pilas
+
+## Nodemon
+
+> nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+
+```bash
+npm install -g nodemon
+```
+```bash
+nodemon --version
+```
+
+### Ejecutar codigo JS con Nodemon
+
+Para el reload:
+
+```bash
+nodemon app.js
+```
+
+## Callback
+
+Función que se manda como argumento a otra función para que sea ejecutado en determinado punto.
