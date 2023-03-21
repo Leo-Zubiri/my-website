@@ -136,6 +136,41 @@ font-family: 'Brygada 1918', serif;
   
 }
 
+#education{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.education--1{
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+}
+
+.education--1-logo{
+  flex:1;
+
+}
+
+
+.education--1-desc{
+  flex:2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fians{
+  width: 100%;
+  object-fit: cover;
+}
+
+
 
 @media screen and (max-width: 640px) {
  .myBanner{
@@ -156,6 +191,9 @@ font-family: 'Brygada 1918', serif;
     height: 95vh;
  }
 } 
+
+
+
 
 
 /* Animations */

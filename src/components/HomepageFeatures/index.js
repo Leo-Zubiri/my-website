@@ -65,10 +65,34 @@ export default function HomepageFeatures() {
             className='scale-up-center main_perfil_photo circle-image'
         />
         <div className="text--center padding-horiz--md">
-          <h3 className={styles.monofont}>Software Developer</h3>
+          <h3 className={styles.monofont}>SOFTWARE DEVELOPER</h3>
           <p className='font-mono me-desc'> My name is Leo Zubiri, I'm looking to grow alongside my colleagues, to face challenges, learn a lot and get the best version of myself.</p>
         </div>
       </div>
+    </div>
+
+    <div id="education">
+      <div className='education--1'>
+        <div className='education--1-logo'>
+          <img 
+            src={useBaseUrl("/img/education.png")} 
+            alt="Education logo"  
+          />
+        </div>
+        <div className='education--1-desc'>
+          <h3 className="font-mono">EDUCATION</h3>
+          <p className="font-mono"> I studied Computer Systems Engineering at the "Universidad Autónoma de Tamaulipas".
+          A great experience in the way of my professional preparation, friends, colleagues and teachers, good people who inspire me
+          </p>
+        </div>
+      </div>
+
+    <img 
+      src={useBaseUrl("/img/fians.jpg")} 
+      alt="Mi Facultad de Ingeniería"  
+      className='fians'
+      />
+
     </div>
 
     <section className={styles.features}>
