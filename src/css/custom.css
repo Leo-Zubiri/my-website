@@ -142,32 +142,50 @@ font-family: 'Brygada 1918', serif;
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 5rem;
+  border-top: #25c2a0 solid 1rem;
+  border-bottom: #25c2a0 solid 1rem;
+  padding: 2rem;
 }
 
 .education--1{
   display: flex;
   flex-direction: row;
+  width: 100%;
   max-width: 1200px;
 }
 
 .education--1-logo{
   flex:1;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .education--1-desc{
   flex:2;
-
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.education--1-desc > h3{
+  font-size: 2rem;
+}
+
+.education--1-desc > p{
+  text-align: justify;
+  max-width: 750px;
+}
+
 .fians{
   width: 100%;
   object-fit: cover;
+  max-width: 1200px;
+  border-radius: 1rem;
 }
 
 
@@ -177,6 +195,14 @@ font-family: 'Brygada 1918', serif;
     height: 95vh;
     
  }
+
+ .education--1{
+ flex-direction: column;
+}
+
+.education--1-desc > p{
+  text-align: center;
+}
   
 }
 

@@ -71,8 +71,8 @@ export default function HomepageFeatures() {
       </div>
     </div>
 
-    <div id="education">
-      <div className='education--1'>
+    <div id="education" className=''>
+      <div className='education--1' data-aos="zoom-in">
         <div className='education--1-logo'>
           <img 
             src={useBaseUrl("/img/education.png")} 
@@ -91,6 +91,7 @@ export default function HomepageFeatures() {
       src={useBaseUrl("/img/fians.jpg")} 
       alt="Mi Facultad de Ingeniería"  
       className='fians'
+      data-aos="zoom-in"
       />
 
     </div>
