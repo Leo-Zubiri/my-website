@@ -61,3 +61,19 @@ const [, var] = arg3.split('=');
 ```
 
 > Lo anterior accede según el orden de los argumentos por lo que no es tan conveniente.
+
+
+---
+
+## Inicializar aplicación Node
+
+Desde el directorio del proyecto:
+
+Configuración básica
+
+```npm init```
+
+Configuración con opciones en el package.json
+```npm init -Y```
+
+> La configuración y dependencias se establecen en el `package.json`
