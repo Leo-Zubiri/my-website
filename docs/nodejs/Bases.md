@@ -42,6 +42,21 @@ myFunction();
 
 ---
 
+## Inicializar aplicación Node
+
+Desde el directorio del proyecto:
+
+Configuración básica
+
+```npm init```
+
+Configuración con opciones en el package.json
+```npm init -Y```
+
+> La configuración y dependencias se establecen en el `package.json`
+
+---
+
 ## Recibir información en línea de comando
 
 En una app de javascript se pueden leer los argumentos colocados en la línea de comandos:
@@ -65,15 +80,24 @@ const [, var] = arg3.split('=');
 
 ---
 
-## Inicializar aplicación Node
+## Yargs
 
-Desde el directorio del proyecto:
+```npm i yargs```
 
-Configuración básica
+Yargs es un paquete que controla las entradas por línea de comandos, siendo una mejor manera para leer argumentos.
 
-```npm init```
+```js title="Utilizando Yargs"
+const argv = require('yargs').argv;
 
-Configuración con opciones en el package.json
-```npm init -Y```
+console.log(argv.var);
+```
 
-> La configuración y dependencias se establecen en el `package.json`
+La constante argv es un objeto, entonces considerando ```node app --var=5``` se tiene:
+
+```js
+{
+    var:5,
+}
+```
+
+> El orden de los argumentos no es tan importante por lo que es una mejor manera de trabajar con las variables desde la línea de comandos
