@@ -131,3 +131,26 @@ const argv = require('yargs')
 ```
 
 > Desde la consola se puede indicar la variable de las formas establecidas: `node app --var=5` o `node app --variable=5`
+
+
+---
+
+### Configuración independiente de yargs
+
+Crear directorio `config/yargs.js`, se debe destinar toda la lógica de yargs anteriormente mencionada.
+
+```js title="config/yargs.js"
+const argv = require('yargs')
+    .option('var',{
+    ...
+    .check( (argv, options) => {
+        ...
+    })
+    .argv;
+
+module.exports = argv;
+```
+
+```js
+const argv = require('./config/yargs')
+```
