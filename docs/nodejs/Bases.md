@@ -101,3 +101,33 @@ La constante argv es un objeto, entonces considerando ```node app --var=5``` se 
 ```
 
 > El orden de los argumentos no es tan importante por lo que es una mejor manera de trabajar con las variables desde la línea de comandos
+
+### Configuración de variables, opciones y banderas en consola
+
+Para crear mas de una forma de nombrar una variable y establecer mas configuraciones:
+
+```js
+const argv = require('yargs')
+    .option('var',{
+        alias: 'variable',
+        demandOption: true,
+        default: 5,
+        describe: 'Descripcion para el help',
+        type: 'number'
+    })
+    .option('l',{
+        alias: 'listar',
+        type: 'boolean',
+        demandOption: true,
+        default: false,
+    })
+    .check( (argv, options) => {
+        if( isNaN(argv.var)) throw 'La variable no es númerica' 
+
+        if()
+        return true;
+    })
+    .argv;
+```
+
+> Desde la consola se puede indicar la variable de las formas establecidas: `node app --var=5` o `node app --variable=5`
