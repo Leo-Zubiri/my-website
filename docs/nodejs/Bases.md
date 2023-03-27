@@ -154,3 +154,20 @@ module.exports = argv;
 ```js
 const argv = require('./config/yargs')
 ```
+
+---
+
+## Colores en consola
+
+El paquete `colors` ayuda a retornar mensajes con distintos colores según se le indique para que las salidas tengan mayor estética
+
+```npm i colors```
+
+Ejemplo de uso
+
+```js
+const colors = require('colors');
+
+console.log('satisfactorio'.green);
+console.log(colors.green('Correcto'))
+```
