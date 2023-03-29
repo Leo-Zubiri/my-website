@@ -5,16 +5,16 @@ import ProjectBox from '../../components/ProjectBox';
 
 export default function Hello() {
   return (
-    <Layout title="My Notes" description="My learning documentation">
+    <Layout title="My Portfolio" description="Leo Zubiri Portfolio">
       <div className='pattern'>
-
+      <h1 className='section-title font-mono'>My Portfolio</h1>
       <ListContent> 
         <ProjectBox 
           img="/img/front.png"
           title="FRONTEND"
           desc="My Frontend challenges, projects, design ideas and more..."
           tools={[]}
-          pageUrl="/porfolio/frontend"
+          pageUrl="/portfolio/frontend"
         />
 
         <ProjectBox 
@@ -22,7 +22,7 @@ export default function Hello() {
           title="BACKEND"
           desc="Authentication, ORM, endpoints, API, and more..."
           tools={[]}
-          pageUrl="/porfolio/backend"
+          pageUrl="/portfolio/backend"
         />
 
         <ProjectBox 
@@ -30,7 +30,7 @@ export default function Hello() {
           title="FULLSTACK"
           desc="All my Full Stack projects"
           tools={[]}
-          pageUrl="/porfolio/fullstack"
+          pageUrl="/portfolio/fullstack"
         />
 
         <ProjectBox 
@@ -38,7 +38,7 @@ export default function Hello() {
           title="Scripts"
           desc="Python Scripting, Excel VBA solutions and more..."
           tools={[]}
-          pageUrl="/porfolio/scripts"
+          pageUrl="/portfolio/scripts"
         />
 
       </ListContent>
