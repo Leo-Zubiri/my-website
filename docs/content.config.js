@@ -12,7 +12,7 @@ export const topics = [
     {
         name: 'React',
         img: '/img/react.png',
-        path: '/docs'
+        path: '/docs/react'
     },
     {
         name: 'Node JS',
