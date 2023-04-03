@@ -71,6 +71,9 @@ font-family: 'Brygada 1918', serif;
   display: flex;
   flex-direction: column;
   padding-top: 6rem;
+  padding-bottom: 6rem;
+  border-top: #25c2a0 solid .2rem;
+  border-bottom: #25c2a0 solid .2rem;
 }
 
 .me-presentation{
@@ -137,56 +140,50 @@ font-family: 'Brygada 1918', serif;
 }
 
 #education{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+ 
+  border-bottom: #25c2a0 solid .2rem;
+}
+
+.education__fians{
+  width: 100%;
+  height: 100%;
+}
+
+.education__desc{
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  margin-top: 5rem;
-  border-top: #25c2a0 solid 1rem;
-  border-bottom: #25c2a0 solid 1rem;
   padding: 2rem;
 }
 
-.education--1{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.education--1-logo{
-  flex:1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.education--1-desc{
-  flex:2;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.education--1-desc > h3{
+.education__desc > h3{
   font-size: 2rem;
 }
 
-.education--1-desc > p{
-  text-align: justify;
-  max-width: 750px;
+.education__desc > p{
+  text-align: center;
+}
+
+.education__logo{
+  max-width: 200px;
 }
 
 .fians{
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  max-width: 1200px;
-  border-radius: 1rem;
 }
+
 
 .section-title {
   text-align: center;
@@ -203,20 +200,32 @@ font-family: 'Brygada 1918', serif;
     
  }
 
- .education--1{
- flex-direction: column;
-}
+ #education{
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+ }
+ 
+ .education__desc{
+  grid-row: 1;
+ }
 
-.education--1-desc > p{
-  text-align: center;
-}
-  
+
 }
 
 @media screen and (min-width: 640px) and (max-width: 1280px) {
   .myBanner{
     height: 95vh;
  }
+
+ #education{
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+ }
+ 
+ .education__desc{
+  grid-row: 1;
+ }
+
 }
 
 @media screen and (min-width: 1280px) {

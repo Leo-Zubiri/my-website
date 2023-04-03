@@ -71,30 +71,28 @@ export default function HomepageFeatures() {
       </div>
     </div>
 
-    <div id="education" className=''>
-      <div className='education--1' data-aos="zoom-in">
-        <div className='education--1-logo'>
-          <img 
-            src={useBaseUrl("/img/education.png")} 
-            alt="Education logo"  
+  <div id="education" className=''>
+      <div className='education__fians'>
+        <img 
+          src={useBaseUrl("/img/fians.jpg")} 
+          alt="Mi Facultad de Ingeniería"  
+          className='fians'
+          data-aos="fade-right"
           />
-        </div>
-        <div className='education--1-desc'>
-          <h3 className="font-mono">EDUCATION</h3>
-          <p className="font-mono"> I studied Computer Systems Engineering at the "Universidad Autónoma de Tamaulipas".
-          A great experience in the way of my professional preparation, friends, colleagues and teachers, good people who inspire me
-          </p>
-        </div>
       </div>
 
-    <img 
-      src={useBaseUrl("/img/fians.jpg")} 
-      alt="Mi Facultad de Ingeniería"  
-      className='fians'
-      data-aos="zoom-in"
-      />
-
-    </div>
+      <div className='education__desc' data-aos="fade-left">
+       <img 
+          src={useBaseUrl("/img/education.png")} 
+          alt="Education logo"  
+          className='education__logo'
+          />
+        <h3 className="font-mono">EDUCATION</h3>
+        <p className="font-mono"> I studied Computer Systems Engineering at the "Universidad Autónoma de Tamaulipas". A great experience in the way of my professional preparation, friends, colleagues and teachers, good people who inspire me.
+        </p>
+        
+      </div>
+  </div>
 
     <section className={styles.features}>
       <div className="container">
