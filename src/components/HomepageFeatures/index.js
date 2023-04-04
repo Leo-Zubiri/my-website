@@ -10,8 +10,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        I studied Computer Systems Engineering at the "Universidad Autónoma de Tamaulipas".
-        A great experience in the way of my professional preparation, friends, colleagues and teachers, good people who inspire me
+        I studied Computer Systems Engineering at the "Universidad Autónoma de Tamaulipas". A great experience in the way of my professional preparation, friends, colleagues and teachers, good people who inspire me.
       </>
     ),
   },
@@ -83,15 +82,33 @@ export default function HomepageFeatures() {
 
       <div className='education__desc' data-aos="fade-left">
        <img 
-          src={useBaseUrl("/img/education.png")} 
+          src={useBaseUrl("/img/graduated.gif")} 
           alt="Education logo"  
           className='education__logo'
           />
         <h3 className="font-mono">EDUCATION</h3>
-        <p className="font-mono"> I studied Computer Systems Engineering at the "Universidad Autónoma de Tamaulipas". A great experience in the way of my professional preparation, friends, colleagues and teachers, good people who inspire me.
-        </p>
+        <p className="font-mono"> {FeatureList[0].description}</p>
         
       </div>
+  </div>
+
+  <div className='skills'>
+    <div className='skills__desc' data-aos="fade-right">
+    	  <img 
+          src={useBaseUrl("/img/langs.gif")} 
+          alt="Education logo"  
+          className=''
+          />
+        <h3 className="font-mono">MY SKILL SET</h3>
+        <p className="font-mono"> {FeatureList[1].description}</p>
+    </div>
+
+    <div className='skills__img' data-aos="fade-left">
+      <img 
+        src={useBaseUrl("/img/lap2.jpg")} 
+        alt="Laptop in skills section" 
+      />
+    </div>
   </div>
 
     <section className={styles.features}>

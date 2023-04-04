@@ -149,6 +149,8 @@ font-family: 'Brygada 1918', serif;
   width: 100%;
  
   border-bottom: #25c2a0 solid .2rem;
+
+  min-height: 700px;
 }
 
 .education__fians{
@@ -175,10 +177,39 @@ font-family: 'Brygada 1918', serif;
 }
 
 .education__logo{
-  max-width: 200px;
+  max-width: 300px;
 }
 
 .fians{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skills{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  border-bottom: #25c2a0 solid .2rem;
+}
+
+.skills__desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.skills__desc > h3{
+  font-size: 2rem;
+}
+
+.skills__desc > img {
+  max-height: 350px;
+  margin-bottom: 2rem;
+}
+
+.skills__img > img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -209,6 +240,11 @@ font-family: 'Brygada 1918', serif;
   grid-row: 1;
  }
 
+ .skills{
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+ }
+
 
 }
 
@@ -225,6 +261,13 @@ font-family: 'Brygada 1918', serif;
  .education__desc{
   grid-row: 1;
  }
+
+ .skills{
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+ }
+
+
 
 }
 
