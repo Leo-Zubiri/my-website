@@ -25,6 +25,7 @@
   --glass-effect: rgba( 255, 255, 255, 0.6 );
   --glass-effect-inverse: rgba( 0, 0, 0, 0.6);
   --text-color: #000000;
+  --gradient: linear-gradient(to bottom, #9a999a, #b0b0b1, #c7c7c8, #dfdfdf, #f7f7f7);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -42,6 +43,7 @@
   --glass-effect: rgba( 0, 0, 0, 0.6);
   --glass-effect-inverse: rgba( 255, 255, 255, 0.6 );
   --text-color: #ffff;
+  --gradient: linear-gradient(to bottom, #261e41, #201c36, #1b1a2c, #171721, #141416);
 }
 
 
@@ -54,6 +56,7 @@ font-family: 'JetBrains Mono', monospace;
 font-family: 'Roboto', sans-serif;
 font-family: 'Brygada 1918', serif;
 */
+
 
 #me{
   width: 100%;
@@ -72,8 +75,7 @@ font-family: 'Brygada 1918', serif;
   flex-direction: column;
   padding-top: 6rem;
   padding-bottom: 6rem;
-  border-top: #25c2a0 solid .2rem;
-  border-bottom: #25c2a0 solid .2rem;
+  background-image: var(--gradient);
 }
 
 .me-presentation{
@@ -117,11 +119,11 @@ font-family: 'Brygada 1918', serif;
 
 .glass{
   background: var(--glass-effect);
-  box-shadow: 0 8px 32px 0 rgba( 10, 10, 135, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba( 10, 10, 135, 0.15 );
   backdrop-filter: blur( 1.5px );
   -webkit-backdrop-filter: blur( 1.5px );
   
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba( 255, 255, 255, 0.1 );
 }
 
 .text-color{
@@ -147,8 +149,6 @@ font-family: 'Brygada 1918', serif;
   justify-content: center;
 
   width: 100%;
- 
-  border-bottom: #25c2a0 solid .2rem;
 
   min-height: 700px;
 }
@@ -189,7 +189,7 @@ font-family: 'Brygada 1918', serif;
 .skills{
   display: grid;
   grid-template-columns: 2fr 3fr;
-  border-bottom: #25c2a0 solid .2rem;
+
 }
 
 .skills__desc{

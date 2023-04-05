@@ -57,7 +57,7 @@ export default function HomepageFeatures() {
   return (
     <>
 
-    <div id='me' className='me-container' data-aos="zoom-in">
+    <div id='me' className='me-container'>
       <h3 className='font-mono me-title'>🚀 Hi I'm Zub! 🚀</h3>
       <div className='me-presentation'>
         <img src={useBaseUrl("/img/me.jpg")} alt="My perfil photo"  
@@ -80,7 +80,7 @@ export default function HomepageFeatures() {
           />
       </div>
 
-      <div className='education__desc' data-aos="fade-left">
+      <div className='education__desc' data-aos="zoom-in">
        <img 
           src={useBaseUrl("/img/graduated.gif")} 
           alt="Education logo"  
@@ -103,7 +103,7 @@ export default function HomepageFeatures() {
         <p className="font-mono"> {FeatureList[1].description}</p>
     </div>
 
-    <div className='skills__img' data-aos="fade-left">
+    <div className='skills__img' data-aos="zoom-in">
       <img 
         src={useBaseUrl("/img/lap2.jpg")} 
         alt="Laptop in skills section" 
@@ -111,15 +111,7 @@ export default function HomepageFeatures() {
     </div>
   </div>
 
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
+
     </>
   );
 }
