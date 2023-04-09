@@ -1,10 +1,10 @@
 export const frontend = [
     {
-        title: 'Mi proyecto',
-        desc: 'Gran proyecto',
-        imgPath: '/img/scripting.png',
+        title: 'Frontend Mentor',
+        desc: 'My Frontend Mentor Profile with challenges',
+        imgPath: '/img/frontend_mentor.png',
         tags: [],
-        pageUrl: "/portfolio/frontend/project1",
+        pageUrl: "https://www.frontendmentor.io/profile/Leo-Zubiri",
     }
 ]
 
