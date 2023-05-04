@@ -19,4 +19,9 @@ export const topics = [
         img: '/img/node.png',
         path: '/docs/nodejs'
     },
+    {
+        name: 'PHP',
+        img: '/img/php.jpg',
+        path: '/docs/php'
+    },
 ];

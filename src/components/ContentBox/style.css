@@ -1,5 +1,6 @@
 .box{
-    max-width: 400px;
+    width: 400px;
+    height: 240px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
