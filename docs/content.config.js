@@ -5,9 +5,9 @@ export const topics = [
         path: '/docs/css'
     },
     {
-        name: 'Laravel',
-        img: '/img/Laravel.jpg',
-        path: '/docs/Laravel'
+        name: 'Javascript',
+        img: '/img/javascript.jpg',
+        path: '/docs/javascript'
     },
     {
         name: 'React',
@@ -23,5 +23,10 @@ export const topics = [
         name: 'PHP',
         img: '/img/php.jpg',
         path: '/docs/php'
+    },
+    {
+        name: 'Laravel',
+        img: '/img/Laravel.jpg',
+        path: '/docs/Laravel'
     },
 ];
