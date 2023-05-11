@@ -29,4 +29,9 @@ export const topics = [
         img: '/img/Laravel.jpg',
         path: '/docs/Laravel'
     },
+    {
+        name: 'Angular',
+        img: '/img/angular.png',
+        path: '/docs/Angular'
+    },
 ];
