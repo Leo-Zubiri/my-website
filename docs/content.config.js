@@ -34,4 +34,9 @@ export const topics = [
         img: '/img/angular.png',
         path: '/docs/Angular'
     },
+    {
+        name: 'SQL Server',
+        img: '/img/sqlserver.png',
+        path: '/docs/sqlserver'
+    },
 ];
