@@ -232,3 +232,67 @@ stock TINYINT
 )
 
 ```
+
+## Ejercicios de Consultas
+
+```sql
+--- Ejercicio de SQL - 22/11/2020
+use FACELECF
+
+--- 1.	Mostrar todos los clientes que sean de la ciudad de Michoacan.
+select * from CLIENTES where CIUDAD = 'Michoacan'
+
+--- 2.	Mostrar los rfc de los clientes que no tienen facturas generadas
+select CLIENTES.RFC from CLIENTES, FACTURAS where FACTURAS.CLIENTE = NULL
+
+--- 3.	Mostrar el nombre de los productos que se están utilizando en las facturas
+select ARTICULOS.ARTICULO, DETFAC.FOLIO 
+from ARTICULOS, DETFAC 
+where ARTICULOS.ARTICULO = DETFAC.DESCRIPCION
+
+--- 4.	Mostrar los nombres de los clientes, la ciudad y los números de facturas que tienen.
+select NOMBRE, CIUDAD, FOLIO
+from FACTURAS
+
+--- 5.	Mostrar todos los clientes donde su nombre empiece con R.
+select NOMBRE from FACTURAS where NOMBRE like 'R%'
+
+--- 6.	Mostrar todos los clientes donde su nombre termine con Z.
+select NOMBRE from FACTURAS where NOMBRE like '%Z'
+
+--- 7.	Mostrar todos los clientes que contengan en su nombre la frase INE.
+select NOMBRE from FACTURAS where NOMBRE like '%INE%'
+
+--- 8.	Mostrar todos los folios de facturas donde su subtotal sea mayor de 5000
+select FOLIO from FACTURAS where SUBTOTAL > 5000
+
+--- 9.	Mostrar todos los folios de facturas donde su importe total sea menor a 3000
+select FOLIO from FACTURAS where TOTAL < 3000
+
+--- 10.	Mostrar todos los folios de facturas donde su importe varie de 6000 hasta los 10000
+select FOLIO from FACTURAS 
+where (6000 < TOTAL AND TOTAL < 10000)
+
+--- 11.	Mostrar todos los folios de las facturas que se realizaron en el año 2010
+select FOLIO from FACTURAS where year(Fecha) = 2010
+
+--- 12.	Mostrar todas las facturas del mes de Julio de cada año
+select * from FACTURAS where month(Fecha) = 07
+
+--- 13.	Mostrar todas las facturas del mes de Agosto de los años 2011 y 2009
+select * from FACTURAS 
+where month(Fecha) = 08 
+	AND year(Fecha) IN (2009, 2011)
+
+--- 14.	Mostrar los clientes que tienen facturas del mes de octubre del año 2011
+select * from CLIENTES, FACTURAS 
+where (CLIENTES.ID = FACTURAS.CLIENTE) 
+	AND month(FACTURAS.FECHA) = 10
+	AND year(FACTURAS.FECHA) = 2011 
+
+--- 15.	Mostrar los artículos que se registraron en facturas de importe total mayor a 6000
+select * from ARTICULOS, FACTURAS
+where FACTURAS.TOTAL > 6000
+
+
+```
