@@ -31,3 +31,23 @@ Seleccionar el precio mas bajo de los productos
 ```sql
 SELECT MIN(precio) AS MinPrecio FROM Producto
 ```
+
+## Having
+
+Filtro por grupo de registros.
+
+Lo siguiente *da error:* 
+
+```sql
+SELECT idCliente, nombreCliente,SUM(total) FROM Venta
+WHERE SUM(total) > 100
+GROUP BY idCliente
+```
+
+> Al agrupar para colocar condiciones se utiliza having
+
+```sql
+SELECT idCliente, nombreCliente,SUM(total) FROM Venta
+GROUP BY idCliente
+HAVING SUM(total) > 100
+```
