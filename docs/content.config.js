@@ -39,4 +39,9 @@ export const topics = [
         img: '/img/sqlserver.png',
         path: '/docs/sqlserver'
     },
+    {
+        name: 'Astro',
+        img: '/img/card-logo/astro-logo.png',
+        path: '/docs/Astro'
+    },
 ];
