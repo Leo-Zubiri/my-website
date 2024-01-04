@@ -44,4 +44,9 @@ export const topics = [
         img: '/img/card-logo/astro-logo.png',
         path: '/docs/Astro'
     },
+    {
+        name: 'Git',
+        img: '/img/card-logo/git-logo.png',
+        path: '/docs/git'
+    },
 ];
