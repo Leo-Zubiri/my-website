@@ -42,3 +42,43 @@ git config --global user.email "Leo.Zubiri@mail.com"
 ```bash
 git config --global -e
 ```
+
+
+## Primeros pasos
+
+**Para inicializar un repositorio**
+
+Desde la ruta raíz del proyecto
+
+- Para inicializar/crear el repositorio
+
+    ```bash
+    git init
+    ```
+- Para ver el status de los cambios en la rama
+
+```bash
+git status
+```
+- Agregar archivos al stage (Marcar como listo para posteriormente crear un commit)
+  
+    ```bash
+    git add <file.ext>
+    ```
+
+    Agregar todos los archivos:
+
+    ```bash
+    git add .
+    ```
+- Quitar archivo del Stage
+
+```bash
+git reset <file.ext>
+```
+
+- Realizar commit (guardar cambios)
+
+```bash
+git commit -m "Primer commit"
+```
