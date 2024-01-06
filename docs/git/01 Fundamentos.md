@@ -89,6 +89,19 @@ Desde la ruta raíz del proyecto
     git checkout -- .
     ```
 
+- Hacer un add al stage y commit en un solo comando
+
+    ```bash
+    git commit -am "Changes added and commited with one command"
+    ```
+    > Solo funciona para los archivos que ya se encuentren por lo menos con seguimiento en un commit (No untracked)
+
+- Ver los commits realizados
+
+    ```bash
+    git log
+    ```
+
 ## Branch (Ramas)
 
 Una rama es una ruta alternativa para trabajar sobre el código, de esta manera se puede trabajar en distintos conceptos a la vez sin la necesidad de estar chocando con los cambios
