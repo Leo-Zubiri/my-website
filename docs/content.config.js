@@ -49,4 +49,9 @@ export const topics = [
         img: '/img/card-logo/git-logo.png',
         path: '/docs/git'
     },
+    {
+        name: 'PostgreSQL',
+        img: '/img/card-logo/postgres-logo.png',
+        path: '/docs/postgres'
+    },
 ];
