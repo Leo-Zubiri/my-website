@@ -126,3 +126,31 @@ Una rama es una ruta alternativa para trabajar sobre el código, de esta manera 
     ```bash
     git config --global init.defaultBranch main
     ```
+
+## Commits
+
+> Los commits se realizan cuando se consigue una funcionalidad o estado del código que queremos almacenar.
+
+Existe la posibilidad de que algún commit que realicemos quisieramos agregar solo ciertos archivos al **Stage**
+
+```bash
+git add *.html
+```
+> Con lo anterior indicamos que todos los cambios en archivos html se agreguen al stage, busca en la raíz donde se ejecuta el comando
+
+En caso de agregar elementos dentro de un directorio específico
+
+```bash
+git add js/*.js
+```
+**Agregar al stage todos los archivos de un directorio, incluyendo subdirectorios**
+
+```bash
+git add folder/
+```
+
+### gitkeep
+
+Por defecto, si creamos una carpeta sin archivos en su interior, git no intentará darle seguimiento y no guarda registro de esta en el commit que realicemos
+
+Si dentro de una carpeta vacía colocamos un archivo llamado `.gitkeep`, git interpretará que debe darle seguimiento a pesar de que este archivo no contenga información relevante o la carpeta en sí. 
