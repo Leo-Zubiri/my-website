@@ -60,6 +60,9 @@ Desde la ruta raíz del proyecto
     ```bash
     git status
     ```
+    ```bash
+    git status --short
+    ```
 - Agregar archivos al stage (Marcar como listo para posteriormente crear un commit)
   
     ```bash
@@ -100,6 +103,10 @@ Desde la ruta raíz del proyecto
 
     ```bash
     git log
+    ```
+
+    ```bash
+    git log --short
     ```
 
 ## Branch (Ramas)
@@ -154,3 +161,19 @@ git add folder/
 Por defecto, si creamos una carpeta sin archivos en su interior, git no intentará darle seguimiento y no guarda registro de esta en el commit que realicemos
 
 Si dentro de una carpeta vacía colocamos un archivo llamado `.gitkeep`, git interpretará que debe darle seguimiento a pesar de que este archivo no contenga información relevante o la carpeta en sí. 
+
+## Alias
+
+Se pueden crear alias para ejecutar comandos que son muy largos y repetitivos constantemente. 
+
+**Para crear un alias:**
+
+```bash
+git config --global alias.s "status --short"
+```
+
+**Editar un alias:**
+
+```bash
+git config --global -e
+```
