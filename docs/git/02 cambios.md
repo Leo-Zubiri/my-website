@@ -37,3 +37,24 @@ git reset --soft HEAD^
 - **--soft**, indica que quita el commit pero sin quitar los cambios que se encuentran en este
 
 > Es recomendable solo revertir los commits cuando son recientes para no afectar cambios históricos y posiblemente tener conflictos.
+
+
+## Quitar todo rastro del commit
+
+```bash
+git reset --hard HEAD^
+```
+
+```bash
+git reset --hard HASHCOMMIT
+```
+
+## REGLOG
+
+Histórico de todo los movimientos que han ocurrido entre los commits
+
+```bash
+git reflog
+```
+
+> A pesar de existan eliminaciones de commits, aún se puede regresar a estos a través del hash
