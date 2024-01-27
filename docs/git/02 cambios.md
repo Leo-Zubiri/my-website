@@ -49,7 +49,7 @@ git reset --hard HEAD^
 git reset --hard HASHCOMMIT
 ```
 
-## REGLOG
+## REFLOG
 
 Histórico de todo los movimientos que han ocurrido entre los commits
 
@@ -58,3 +58,21 @@ git reflog
 ```
 
 > A pesar de existan eliminaciones de commits, aún se puede regresar a estos a través del hash
+
+
+## Ignorar el seguimiento de archivos
+
+Es normal que existan directorios o archivos que no tienen relevancia. Se puede crear un archivo `.gitignore` en la raíz del proyecto para evitar que git les de seguimiento
+
+`.gitignore`
+
+```gitignore
+directorio/
+directorio2/
+
+archivo.txt
+*.log
+```
+
+> Al archivo gitignore hay que darle seguimiento a los cambios ya que indica en todo momento que directorios o archivos del proyecto pueden ser genéricos para git
+
