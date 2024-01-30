@@ -58,3 +58,60 @@ git merge rama-origen
 Un conflicto es el choque de cambios donde git no puede integrar los cambios directamente. Esto ocurre posiblemente por que existen cambios sobre mismas líneas y se debe conservar una u otra o ambas, se debe establecer manualmente que se conservará.
 
 Se tiene que editar el archivo, git marca la sección del conflicto y se hace un commit con la resolución.
+
+
+# Tags (Etiquetas)
+
+Los tags son utilizados comúnmente para marcar en el registro histórico una versión o release del proyecto
+
+Un tag hace referencia a un commit y a todo el estado de un proyecto en ese momento 
+
+Se puede nombrar el tag como resulte más conveniente, puede ser una versión numérica o palabra clave
+
+
+**Crear un tag**
+
+```bash
+git tag primer-release
+```
+
+**Visualizar los tags**
+
+```bash
+git tag
+```
+
+**Visualizar un tag específico**
+```bash
+git show v1.0.1
+```
+
+**Borrar un tag**
+
+```bash
+git tag -d nombre-tag
+```
+
+**Crear tag version**
+
+```bash
+git tag -a v1.0.0 -m "Version 1.0.0 lista"
+```
+
+**Crear tag en un commit específico**
+
+> Se coloca el hash del commit
+
+```bash
+git tag -a v1.0.1 9fceb02 -m "Version alpha"
+```
+
+## Nomenclatura de una versión
+
+Tomando como ejemplo:
+
+`v1.0.2`
+
+- v1: Representa una versión con cambios grandes o concretos, que diferencian totalmente  la versión anterior. Por lo general se utiliza cuando hay una gran cantidad de funcionalidades
+- 0. El segundo número puede representar la adición de una nueva funcionalidad pero no representa por si sola una versión mayor
+- 2. El tercer número generalmente es para la solución de bugs, conforme aparecen y son resueltos, este número va incrementando
