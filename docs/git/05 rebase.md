@@ -54,3 +54,24 @@ squash 12nau12a Nombre commit 1
 
 - Se presiona ESC para salir
 - Se escribe :wq! y Enter para guardar y cerrar el archivo.
+
+# Rebase - Reword
+
+Es una forma para cambiar los nombres de commits anteriores
+
+Elegir los últimos 4 commits
+
+```bash
+git rebase -i HEAD~4
+```
+
+Para renombrar los commits
+```bash
+pick 123a2eb Nombre commit 3
+reword 9aasn12a "Nombre commit 2 modificado"
+r 12nau12a "Nombre commit 1 modificado"
+``` 
+Con ´Esc´
+```bash
+:wq!
+```
