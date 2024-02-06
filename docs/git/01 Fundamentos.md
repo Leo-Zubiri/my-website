@@ -92,6 +92,11 @@ Desde la ruta raíz del proyecto
     git checkout -- .
     ```
 
+- Quitar los cambios de un archivo
+    ```bash
+    git checkout -- <file.ext>
+    ```
+
 - Hacer un add al stage y commit en un solo comando
 
     ```bash

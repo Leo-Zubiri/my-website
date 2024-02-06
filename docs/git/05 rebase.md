@@ -71,7 +71,44 @@ pick 123a2eb Nombre commit 3
 reword 9aasn12a "Nombre commit 2 modificado"
 r 12nau12a "Nombre commit 1 modificado"
 ``` 
-Con ´Esc´
+Con `Esc`
+
 ```bash
 :wq!
+```
+
+# Rebase - edit
+
+> Usado para editar el mensaje del commit o editar el commit en sí
+
+Elegir los últimos 4 commits
+
+```bash
+git rebase -i HEAD~4
+```
+
+```bash
+pick 123a2eb Nombre commit 3
+pick 9aasn12a "Nombre commit 2 modificado"
+edit 12nau12a "Nombre commit 1 modificado"
+``` 
+
+```bash
+git reset HEAD^
+```
+
+```bash
+git reset --continue
+```
+
+## Rebase y Amend
+
+El amend permite cambiar el mensaje y/o el contenido del último commit. Es util cuando acabamos de hacer un commit y talvez nos faltó agregar un archivo o poner otro mensaje
+```bash
+git commit --amend "Cambiar Mensaje"
+```
+
+En caso de querer cambiar commits mas antiguos se utiliza el rebase
+```bash
+git rebase
 ```
