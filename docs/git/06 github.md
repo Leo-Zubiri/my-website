@@ -28,3 +28,29 @@ git remote add https:/github.com/usuario/repositorio.git
 git push -u origin master
 ```
 > Lo anterior indica  que se va a subir todo lo que hay en la rama `master` al repositorio en github. Se utilizan las credenciales de github para que los cambios sean aplicados.
+
+
+## GITHUB TAGS
+
+Por defecto las tags agregadas en el repositorio de forma local, no se suben automaticamente a GitHub. Para que se envíen a GitHub es necesario actualizarlas cada cierto tiempo de ser necesario con:
+
+```bash
+git push --tags
+```
+
+![](img/github-repo-opt.png)
+
+Se puede descargar el código como se encuentra en cada tag (versión)
+
+![](img/github-tags.png)
+
+
+### RELEASE TAGS
+
+Desde la sección de tags se selecciona uno que represente una versión de lanzamiento o pre-lanzamiento. En la información del tag se puede pulsar en editar
+
+En la edición se puede describir la versión así como agregar otra clase de recursos que se quieran asociar a la descarga de ese release.
+
+Una vez configurado la sección de releases del repositorio lo contendrá
+
+![](img/github-releases.png)
