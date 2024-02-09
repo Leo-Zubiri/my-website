@@ -29,6 +29,21 @@ git push -u origin master
 ```
 > Lo anterior indica  que se va a subir todo lo que hay en la rama `master` al repositorio en github. Se utilizan las credenciales de github para que los cambios sean aplicados.
 
+### PULL
+
+Se utiliza para traer los cambios mas recientes del origin configurado con el `remote`. Es decir, que la versión de la rama sea la más actualizada según la que se encuentra en github
+
+Pull por defecto al origen configurado:
+
+```bash
+git pull
+```
+
+Se puede especificar la rama:
+```bash
+git pull origin main
+```
+
 
 ## GITHUB TAGS
 
