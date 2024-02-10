@@ -43,7 +43,27 @@ Se puede especificar la rama:
 ```bash
 git pull origin main
 ```
+#### PULLING STRATEGY
 
+Existen estrategias distintas a la hora de unir los cambios del remoto con el local a través de un PULL, esto se le conoce como **PULLING WITHOUT RECONCILE STRATEGY**.
+
+Entre las estrategias para el pull:
+
+- pull.rebase false - MERGE
+- pull.rebase true - rebase
+- pull.ff only - fast-forward only
+
+Es muy común utilizar la estrategia del fast-forward, en caso contrario existirán conflictos que resolver
+
+Para establecer la estrategia del pulling en la configuración global:
+
+```bash
+git config --global pull.ff only
+```
+En caso de querer ver el archivo de la configuración
+```bash
+git config --global -e
+```
 
 ## GITHUB TAGS
 
