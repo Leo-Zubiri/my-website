@@ -65,6 +65,25 @@ En caso de querer ver el archivo de la configuración
 git config --global -e
 ```
 
+## GIT PUSH
+Una vez que se terminen los cambios locales para actualizar el repositorio remoto se utiliza el **push**
+
+```bash
+git push
+```
+
+Existe la posibilidad de que lleguen a haber conflictos si hay cambios en el origin que choquen con los locales. Si colocamos la estrategia del pull solo para fast-forward no podríamos actualizar la rama con solo **git pull**
+
+Para que exista la posibilidad de atender los conflictos se puede configurar la estrategia del pull solo para el local
+
+```bash
+git config pull.rebase true
+git pull
+```
+
+
+
+
 ## GITHUB TAGS
 
 Por defecto las tags agregadas en el repositorio de forma local, no se suben automaticamente a GitHub. Para que se envíen a GitHub es necesario actualizarlas cada cierto tiempo de ser necesario con:
