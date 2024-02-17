@@ -108,3 +108,18 @@ En la edición se puede describir la versión así como agregar otra clase de re
 Una vez configurado la sección de releases del repositorio lo contendrá
 
 ![](img/github-releases.png)
+
+
+## GIT FETCH
+
+Sirve para actualizar las referencias en base al repositorio remoto sin la necesidad de bajar los cambios mas actuales y crear un merge o rebase
+
+Es decir, se puede hacer primero un `fetch` para ver si hay actualizaciones en el remoto y posteriormente hacer el `pull` de los cambios
+
+```bash
+git fetch
+```
+
+```bash
+git pull
+```
