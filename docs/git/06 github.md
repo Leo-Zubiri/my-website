@@ -123,3 +123,12 @@ git fetch
 ```bash
 git pull
 ```
+
+## GITHUB FORK
+
+Git clone es para clonar un repositorio publico a tu repositorio local (Es como descargar el proyecto en tu computadora)
+
+`GIT FORK` es para darle seguimiento al proyecto, es decir Haciendo un fork puedes contribuir a un repositorio que no es tuyo mediante pull requests, internamente un fork hace una copia exacta del repositorio original en tu cuenta github (con una url diferente a la del fork) y luego puedes usar clone para llevarlo a tu repositorio local, así tu trabajas en una copia exacta del proyecto original y ya en tu repositorio podrás hacerle los cambios que quieras sin afectar el repositorio original.
+Usualmente Fork se usa en proyectos Open Source. Donde no se le puede dar acceso a todo el mundo, pero si alguien quiere contribuir lo puede hacer de esta manera.
+
+
