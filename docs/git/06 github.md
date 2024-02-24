@@ -132,3 +132,43 @@ Git clone es para clonar un repositorio publico a tu repositorio local (Es como 
 Usualmente Fork se usa en proyectos Open Source. Donde no se le puede dar acceso a todo el mundo, pero si alguien quiere contribuir lo puede hacer de esta manera.
 
 
+### SE NECESITA APROBACION PARA INTEGRAR CAMBIOS
+
+> Con el fork se necesita hacer un pull request para que los cambios sean integrados en el origen (repositorio base de donde se realizó el fork)
+
+Se puede hacer un fork del repositorio remoto principal(convencionalmente llamado **upstream** u **origin**), esto creará una copia en el github personal, posteriormente lo clonamos de forma local y se empiezan a crear commits para afectar la versión clonada
+
+Si se requiere bajar los cambios pero del **upstream** para actualizar nuestro fork, se debe agregar la referencia.
+
+```bash
+git remote -v
+```
+
+>  Con lo anterior se visualiza de que remoto se hace el **fetch** y en cual un **push**
+
+#### UPSTREAM
+Si se va a agregar un remoto del cual solo bajaremos información usualmente se le conoce como **upstream**
+
+```bash
+git remote add upstream [url/path del remoto]
+```
+
+Ahora se pueden bajar cambios de nuestro fork remoto
+
+```bash
+git pull
+```
+
+Y bajar los últimos cambios en el upstream
+
+```bash
+git pull upstream master
+```
+
+#### PULL REQUEST
+
+Una vez hemos realizado commits se pueden llevar los cambios mediante un pull request ya que se trabajó sobre un fork y no sobre el repositorio origen
+
+Es decir, no se pueden subir los cambios directamente al upstream al menos que sean aprobados para integrarse
+
+Github proporciona la opción de pull request desde su interfaz en el repositorio fork, y sabe la relación que tiene con el origen para crear una solicitud y que nuestros cambios sean integrados una vez aceptados.
