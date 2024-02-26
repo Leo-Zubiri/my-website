@@ -124,6 +124,18 @@ git fetch
 git pull
 ```
 
+## FLUJOS DE TRABAJO
+
+- En base a forks. Nos permite que cada cambio que se quiera integrar al repositorio principal tenga que ser revisado y aprobado. Esto puede ser tedioso de implementar cuando se trabaja con muchos desarrolladores
+- En base a ramas. Cada desarrollador puede crear su propia rama, esta se conoce como **feature branch**
+    ```bash
+    git fetch
+    git branch -a
+    git checkout nombre-rama
+    ```
+- Trabajar con ramas y hacer pull request. Se puede trabajar mediante ramas y una vez se actualicé la feature-branch desde github se puede hacer un pull request para que el equipo de trabajo revise los cambios antes de ser integrados.
+
+
 ## GITHUB FORK
 
 Git clone es para clonar un repositorio publico a tu repositorio local (Es como descargar el proyecto en tu computadora)
@@ -172,3 +184,21 @@ Una vez hemos realizado commits se pueden llevar los cambios mediante un pull re
 Es decir, no se pueden subir los cambios directamente al upstream al menos que sean aprobados para integrarse
 
 Github proporciona la opción de pull request desde su interfaz en el repositorio fork, y sabe la relación que tiene con el origen para crear una solicitud y que nuestros cambios sean integrados una vez aceptados.
+
+## RAMAS EN GITHUB
+
+Desde nuestra copia local se puede crear una rama y trabajar sobre esta. Si intentamos subir los cambios con ```git push``` ocurrirá un error, la rama no existe en el remoto y por lo tanto no puede actualizarla. Git te da la solución
+
+```bash
+git push --set-upstream origin nombre-rama
+```
+
+Despues desde github se puede solicitar el pull request de la rama-feature al main del remoto principal, y si los cambios son integrados se puede eliminar la rama desde github de ser necesario
+
+Desde la copia local del fork tambien se puede eliminar la rama
+
+```bash
+git branch -d nombre-rama
+```
+
+> Si hay cambios no aplicados y se intenta eliminar la rama ocurrirá un error, para forzar la eliminación de la rama se agrega `-f` para forzar
