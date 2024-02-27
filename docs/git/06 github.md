@@ -243,5 +243,5 @@ git checkout v1.0.0
 > Lo anterior nos posicionará en esa versión, pero no estaremos sobre una rama, para crear una rama con esa versión:
 
 ```bash
-git checkout -b rama-recuperada
+git checkout -b rama-recuperada     
 ```
