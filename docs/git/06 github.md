@@ -202,3 +202,11 @@ git branch -d nombre-rama
 ```
 
 > Si hay cambios no aplicados y se intenta eliminar la rama ocurrirá un error, para forzar la eliminación de la rama se agrega `-f` para forzar
+
+### PULL --ALL
+
+Puede darse el caso de que nuestro equipo de trabajo este trabajando en ramas y subiendo actualizaciones de estas al remoto principal. Puede haber casos donde un **pull** solo se dedique a traer cambios de la rama en la que se está trabajando. Si se requiere estar actualizando la copia local junto con todas las ramas del remoto principal:
+
+```bash
+git pull --all
+```
