@@ -224,3 +224,24 @@ Si borramos ramas en el origin se debe actualizar ese status en local, por lo qu
 ```bash
 git remote prune origin
 ```
+
+### RECUPERAR RAMA DE PRODUCCION 
+
+Es recomendable utilizar tags para las distintas versiones que se lanzan a producción. Si se diera el caso de que se eliminan las ramas donde se trabajaron dichas versiones tanto en el remoto como en el local, existe la posibilidad de recuperar la aplicación en esos estados.
+Tal vez se necesita seguir dando mantenimiento a una versión en específico o solicitan el código en determinado momento del tiempo
+
+Para ver las versiones mediante los tags:
+```bash
+git tag
+```
+
+Entrar a la versión que se requiera
+```bash
+git checkout v1.0.0
+```
+
+> Lo anterior nos posicionará en esa versión, pero no estaremos sobre una rama, para crear una rama con esa versión:
+
+```bash
+git checkout -b rama-recuperada
+```
