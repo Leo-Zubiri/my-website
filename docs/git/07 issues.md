@@ -35,3 +35,17 @@ Cuando algún usuario intente crear un nuevo issue se le cargará el formato par
 ![](../git/img/github-issues_config.png)
 
 ![](../git/img/github-issues_types.png)
+
+## Labels
+
+Al crear un issue se le pueden asignar labels para indicar de que se trata. Mas adelante se pueden filtrar los issues a través de las etiquetas para dar seguimiento de forma mas ordenada
+
+![](../git/img/github-issue-labels.png)
+
+
+## Milestones
+
+Sirven como un agrupador de issues, sirve como si agregaramos una categoría a los issues que se crean.
+Se pueden establecer metas con los milestones, por ejemplo, crear uno para lograr el primer lanzamiento de la aplicación, según vayan saliendo issues se les agrega este milestone y a través de este se pueden ver la cantidad de issues que deben ser atendidos antes de cumplir con esa meta.
+
+![](../git/img/github-milestones.png)
