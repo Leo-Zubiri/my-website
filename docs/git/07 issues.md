@@ -23,3 +23,15 @@ git commit -am "Fixes #5: Solucionado esta situacion"
 ```
 
 > Desde github aparece el issue como cerrado e indica el commit relacionado
+
+
+## Issue templates
+
+Desde la configuración del repositorio en github existe la opción para crear plantillas para los issues.
+
+Entonces podemos establecer algún formato para describir los bugs, solicitar características entre otras cosas.
+Cuando algún usuario intente crear un nuevo issue se le cargará el formato para que intente seguir las buenas prácticas para la descripción del issues
+
+![](../git/img/github-issues_config.png)
+
+![](../git/img/github-issues_types.png)
