@@ -57,3 +57,11 @@ Cada repositorio en GitHub viene equipado con una sección para alojar documenta
 ![](../git/img/github-wiki.png)
 
 Se puede utilizar markdown para crear el contenido y las respectivas páginas de la wiki
+
+## Projects
+
+Un proyecto es una colección adaptable de elementos que se pueden ver como una tabla, un panel kanban o un mapa de ruta y que permanece actualizado con los datos GitHub. Tus proyectos pueden realizar el seguimiento de incidencias, solicitudes de incorporación de cambios e ideas que anotes.
+
+Puede crear y personalizar varias vistas mediante el filtrado, la ordenación y la agrupación de las incidencias y solicitudes de incorporación de cambios, visualizar el trabajo con gráficos configurables y agregar campos personalizados para realizar el seguimiento de metadatos específicos del equipo. En lugar de aplicar una metodología específica, un proyecto proporciona características flexibles que puedes personalizar en función de las necesidades y los procesos del equipo.
+
+![](../git/img/github-projects.png)
