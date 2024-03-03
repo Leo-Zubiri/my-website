@@ -65,3 +65,16 @@ Un proyecto es una colección adaptable de elementos que se pueden ver como una 
 Puede crear y personalizar varias vistas mediante el filtrado, la ordenación y la agrupación de las incidencias y solicitudes de incorporación de cambios, visualizar el trabajo con gráficos configurables y agregar campos personalizados para realizar el seguimiento de metadatos específicos del equipo. En lugar de aplicar una metodología específica, un proyecto proporciona características flexibles que puedes personalizar en función de las necesidades y los procesos del equipo.
 
 ![](../git/img/github-projects.png)
+
+
+# Gist
+
+Un gist es una forma que se tiene para poder compartir código usando GitHub.
+
+Cuando tenemos un código que no es lo suficientemente grande para crear un repositorio, entonces creamos un gist. Aunque gist funciona básicamente cómo un repositorio, ya que se le puede hacer un fork o clonarlo. Así mismo se puede editar y las personas pueden comentar el gist.
+
+Muchas personas usan gist cómo un portapapeles. Para subir código que siempre sueles usar en diferentes proyectos. También se suele usar cómo una forma de hacer posts.
+
+![](../git/img/github-gist.png)
+
+![](../git/img/gist.png)
