@@ -49,3 +49,11 @@ Sirven como un agrupador de issues, sirve como si agregaramos una categoría a l
 Se pueden establecer metas con los milestones, por ejemplo, crear uno para lograr el primer lanzamiento de la aplicación, según vayan saliendo issues se les agrega este milestone y a través de este se pueden ver la cantidad de issues que deben ser atendidos antes de cumplir con esa meta.
 
 ![](../git/img/github-milestones.png)
+
+# Wiki
+
+Cada repositorio en GitHub viene equipado con una sección para alojar documentación, llamada **wiki**. Puede utilizar la wiki de su repositorio para compartir contenido extenso sobre el proyecto, cómo usarlo, cómo se diseñó o sus principios básicos. Un archivo README indica rápidamente qué puede hacer su proyecto, mientras que una wiki p proporcionar documentación adicional.
+
+![](../git/img/github-wiki.png)
+
+Se puede utilizar markdown para crear el contenido y las respectivas páginas de la wiki
