@@ -54,4 +54,9 @@ export const topics = [
         img: '/img/card-logo/postgres-logo.png',
         path: '/docs/postgres'
     },
+    {
+        name: 'Python',
+        img: '/img/card-logo/python-logo.png',
+        path: '/docs/python'
+    }
 ];
