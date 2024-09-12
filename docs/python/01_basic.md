@@ -78,6 +78,7 @@ print(3*2) # 6
 print(5/3) # 1.666666
 print(5//3) # 1 Without decimals
 print(3**2) # 9 exponent
+print(10%5) # Modulo 10 / 5 = 2 then modulo = 0
 ```
 
 **F String**
@@ -85,4 +86,24 @@ print(3**2) # 9 exponent
 ```py
 age = 18
 print(f"I am {age} years old")
+```
+
+**Conditional statements**
+
+Comparison Operators
+- **>** Greater than
+- **<** Less than
+- **>=** Greater than or equal to
+- **<=** Less than or equal to
+- **==** Equal to
+- **!=** Not equal to
+
+```py
+height = 120
+if height > 100:
+    print("A")
+elif height > 60:
+    print("B")
+else:
+    print("C")
 ```
