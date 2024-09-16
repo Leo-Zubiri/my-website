@@ -32,3 +32,15 @@ En caso de que no se hayan realizado las migraciones a la base de datos:
 ```bash
 php artisan serve
 ```
+
+## VSCode por primera vez
+
+En caso de utilizar VSCode se deben instalar las siguientes extensiones para asegurar la integracion correcta de visual studio para trabajar con el codigo de laravel
+
+- PHP Intelephense (Ben Mewburn)
+- Laravel Extra Intellisense (amir)
+- Laravel goto view (codingyu)
+- Laravel Blade Formatter (Shuhei)
+- Laravel Blade Snippets (Winnie Lin)
+- Laravel Goto (Adrian)
+- Tailwind CSS Intellisense (Tailwind labs)
