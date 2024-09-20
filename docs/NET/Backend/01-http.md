@@ -53,8 +53,7 @@ Que nuestro servidor retorne un mensaje con una numeracion entre los siguientes 
 - `500 - 599`. Indican un error en el servidor
 
 
-
-</br></br>
+---
 
 # JSON
 
