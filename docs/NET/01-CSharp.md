@@ -67,3 +67,47 @@ class SaleWithTax : Sale{
     public override string GetInfo(){return "Hi!";}
 }
 ```
+
+## Interfaces
+
+Un interfaz en es una colección de definiciones que una clase o una estructura puede implementar (como métodos, propiedades, eventos o indexadores).
+
+A diferencia de las clases, los interfaces no contienen implementaciones de métodos, solo definen los miembros que deben ser implementados por las clases o estructuras que los implementan.
+
+Las interfaces son un contrato que una clase puede firmar para indicar que implementará ciertas funcionalidades y propiedades. 
+
+```c#
+interface ISale{
+    decimal Total {get; set;}
+}
+
+interface ISave{
+    public void Save();
+}
+
+public class Sale : ISale,ISave{
+    public decimal Total {get; set;}
+    public void Save(){
+        Console.WriteLine("Save");
+    }
+}
+
+public class RandomClass : ISave{
+    public void Save(){
+        Console.WriteLine("Save method");
+    }
+}
+```
+
+Gracias a las interfaces se pueden realizar metodos o funciones que esperen un objeto que cumpla con la interfaz, independiente de que clase provenga.
+
+```c#
+var sale = new Sale();
+var rClass = new RandomClass();
+void Some(ISave save){
+    // Do something
+}
+
+Some(sale);
+Some(rClass);
+```
