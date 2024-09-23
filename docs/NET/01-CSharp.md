@@ -111,3 +111,55 @@ void Some(ISave save){
 Some(sale);
 Some(rClass);
 ```
+
+## Generics
+
+Con Generics se pueden crear clases o métodos que son independientes de su tipo contenido. En vez de escribir métodos o clases con la misma funcionalidad para diferentes tipos, se puede crear únicamente un método o una clase para ello.
+
+Una clase genérica se define una única vez y se puede reutilizar con cualquier tipo. Un ejemplo básico es el de la clase List del espacio de nombres `System.Collections.Generic` que se puede instanciar como una lista de enteros, de cadenas o de clases:
+
+```c#
+var list = new List<int>();
+list.Add(23);
+ 
+var stringList = new List<string>();
+stringList.Add("mi cadena");
+ 
+var miClaseList = new List<MiClase>();
+miClaseList.Add(new MiClase());
+```
+
+<br>
+
+**Creando una clase generica**
+
+Por convencion se utiliza como parametro de clase `<T>`. **T** indica un Tipo de dato, no se especifica alguno en particular
+
+```c#
+public class MyList<T>{
+    private List<T> list;
+    private int _limit;
+
+    public MyList(int limit){
+        _limit = limit;
+        list = new List<T>();
+    }
+
+    public void Add(T element){
+        if(_list.Count < _limit){
+            _list.Add(element);
+        }
+    }
+}
+
+var numbers = new MyList<int>(2);
+var names = new MyList<string>(1);
+
+numbers.Add(34);
+numbers.Add(28);
+numbers.Add(50); // La clase MyList no agregara el tercer elemento por fijar el limite en 2 elementos en el constructor
+
+names.Add("Aitana");
+names.Add("Daniela"); // No se agregara a la lista MyList<string>(1);
+names.Add("Leo"); // No se agregara a la lista MyList<string>(1);
+```
