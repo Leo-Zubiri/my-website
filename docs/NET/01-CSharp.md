@@ -163,3 +163,33 @@ names.Add("Aitana");
 names.Add("Daniela"); // No se agregara a la lista MyList<string>(1);
 names.Add("Leo"); // No se agregara a la lista MyList<string>(1);
 ```
+
+
+## Serializacion y deserializacion (JSON)
+
+Utilizando la siguiente clase Persona, se pueden convertir instancias de clase al formato json(serializar) y viceversa, convertir formato json a instancias de objeto
+
+```c#
+using System.Text.Json;
+
+var p1 = new People(){
+    Name = "Hedson",
+    Age = 24
+};
+
+// Serializar un objeto a formato JSON
+string json = JsonSerializer.Serialize(p1);
+Console.WriteLine(json);
+
+// Deserializar un formato Json a Objeto
+string myJson = @" {""Name"":""Leonardo"",""Age"":25} ";
+People people = JsonSerializer.Deserialize<People>(myJson);
+Console.WriteLine(people?.Name);
+Console.WriteLine(people?.Age);
+
+public class People{
+    public string Name {get; set;}
+    public int Age {get; set;}
+}
+
+```
