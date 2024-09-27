@@ -193,3 +193,98 @@ public class People{
 }
 
 ```
+
+## Programacion Funcional
+
+¿Qué es la programación funcional en C#?
+
+La programación funcional es un paradigma de programación que se centra en el uso de funciones como bloques fundamentales para construir programas. 
+
+En C#, aunque es un lenguaje orientado a objetos, también permite la programación funcional mediante el uso de funciones de orden superior, expresiones lambda y la inmutabilidad de los datos. 
+
+Características clave de la programación funcional en C#:
+- **Funciones de orden superior:** Estas son funciones que pueden recibir otras funciones como parámetros o devolver funciones como resultado. Esto permite crear código más modular y reutilizable.
+- **Inmutabilidad:** En la programación funcional, se prefiere no modificar los datos una vez que han sido creados. Esto ayuda a evitar efectos secundarios y hace que el código sea más predecible y fácil de entender.
+- **Expresiones lambda:** C# permite el uso de expresiones lambda, que son una forma concisa de definir funciones anónimas. Esto facilita la escritura de código funcional, especialmente al trabajar con colecciones y LINQ.
+- **Composición de funciones:** Se pueden combinar varias funciones para crear nuevas funciones, lo que permite construir soluciones complejas a partir de componentes más simples.
+
+<br>
+
+### Funcion Pura
+
+Una función pura es una función que siempre produce el mismo resultado cuando se llama con los mismos argumentos y que no tiene efectos secundarios, es decir, no modifica ni depende del estado externo.
+
+Para que una función sea considerada como pura, debe cumplir con dos reglas fundamentales:
+
+1. Dado el mismo conjunto de argumentos, la función siempre debe devolver el mismo resultado. Esto significa que la función no debe depender de ninguna variable o estado externo.
+2. La función no debe tener efectos secundarios. Esto significa que la función no debe cambiar ningún estado externo o interactuar con otras partes del sistema. La función solo debe realizar operaciones en los datos de entrada y devolver un resultado.
+
+Las funciones puras siempre devuelven el mismo resultado cuando reciben los mismos parámetros. En cambio, otras funciones que dependen de factores externos (como el tiempo o una petición HTTP) no siempre pueden devolver el mismo resultado aunque reciban los mismos parámetros, incluso, pueden no necesitar recibir parámetros para ejecutarse correctamente.
+
+**Ejemplo funcion pura**
+
+```js
+const double = x => x*2
+double(2) // siempre es 4
+double(3) // siempre es 6
+
+const isGreaterThan = (value, comparison) => value > comparison
+isGreaterThan(5, 6) // siempre devuelve false
+isGreaterThan(8, 6) // siempre devuelve true
+```
+
+**Ejemplo de funcion que no es pura**
+
+```js
+const time = () => new Data().toLocalTimeString()
+time() // siempre devuelve un resultado diferente
+```
+
+<br>
+
+### Funcion de primera clase
+
+En C#, se dice que las funciones son de primera clase ("objetos de primera clase") cuando se pueden tratar como cualquier otro tipo de dato. Esto significa que puedes:
+
+- **Asignar funciones a variables:** Puedes almacenar una función en una variable, lo que te permite pasarla y utilizarla más tarde.
+- **Pasar funciones como argumentos:** Puedes enviar funciones como parámetros a otras funciones, lo que permite crear funciones más flexibles y reutilizables.
+- **Devolver funciones desde otras funciones:** Puedes crear funciones que devuelvan otras funciones, lo que permite construir comportamientos dinámicos y complejos.
+
+> Desde C# 3.0, se introdujeron tipos como `Func` y `Action`, que facilitan el uso de funciones de primera clase en el lenguaje. Esto permite a los desarrolladores aprovechar la programación funcional, haciendo que el código sea más modular y expresivo.
+
+> Si el metodo no retorna nada se utiliza `Action` y si es una funcion que retorna valor se usa `Func`
+
+```c#
+// Guardar Funcion en una variable
+var showVar = Show;
+var showUpperVar = ShowUpper;
+showVar("Hi!");
+
+// Ejecutar un metodo enviando otro metodo como parametro
+Some(showVar,"Hello there");
+
+// Ejecutar una funcion enviando otra funcion como parametro
+Console.WriteLine(Somefn(showUpperVar,"To upper!!!"));
+
+void Show(string message){
+    Console.WriteLine(message);
+}
+
+string ShowUpper(string message){
+    return message.ToUpper();
+}
+
+// Se puede recibir un metodo como parametro, se utiliza el tipo Action en caso de que sea un metodo que no retorne nada, y se utiliza el generic <string> por que recibe ese valor para ejecutar el void
+void Some(Action<string> fn, string message){
+    Console.WriteLine("Proceso aqui");
+    fn(message);
+    Console.WriteLine("Proceso aqui");
+}
+
+// Se puede recibir una funcion como parametro, indicando lo que se recibe y retorna junto a la sentencia Func<recibe,retorna>
+string Somefn(Func<string,string> fn, string message){
+    Console.WriteLine("Proceso aqui");
+    return fn(message);
+    Console.WriteLine("Proceso aqui");
+}
+```
