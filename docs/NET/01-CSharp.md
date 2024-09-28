@@ -288,3 +288,33 @@ string Somefn(Func<string,string> fn, string message){
     Console.WriteLine("Proceso aqui");
 }
 ```
+
+<br>
+
+
+## Expresiones Lambda
+
+> En algunos lenguajes pueden conocerse como funciones flecha, función literal o función anónima
+
+Las expresiones lambda en C# son una forma concisa de definir funciones anónimas. Una manera sencilla de conceptualizarlas es pensar en ellas como una forma de escribir métodos en una sola línea. Por ejemplo, en lugar de definir un método completo, puedes usar una expresión lambda para realizar una operación simple, como sumar dos números o filtrar una lista
+
+Las expresiones lambda son especialmente útiles en programación funcional y se utilizan comúnmente con métodos como Select, Where y otros que operan sobre colecciones. Esto permite escribir código más limpio y legible, facilitando la manipulación de datos en colecciones y la implementación de lógica de negocio de manera más directa.
+
+```c#
+// La siguiente funcion lambda recibe dos numeros enteros y regresa uno.
+Func<int,int,int> sub = (int a,int b) => a-b;
+
+// Se puede simplificar por que se indico los tipos de dato de las variables de entrada
+Func<int,int,int> sub = (a,b) => a-b;
+
+// Sin una funcion lambda se tendria que crear una funcion como la siguiente
+int sub(int a, int b){
+    return a-b;
+}
+
+// Existe la posibilidad de escribir mas lineas de codigo en una funcion lambda
+Func<int,int> some = a => {
+    a = a + 1;
+    return a * 5;
+};
+```
