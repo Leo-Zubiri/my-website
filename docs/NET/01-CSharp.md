@@ -318,3 +318,36 @@ Func<int,int> some = a => {
     return a * 5;
 };
 ```
+
+## LINQ
+
+LINQ, que significa **Language Integrated Query**, es un conjunto de tecnologías desarrolladas por Microsoft que permite realizar consultas y manipulaciones de datos de manera integrada en el lenguaje C#. Esta herramienta facilita la interacción con diferentes fuentes de datos, como bases de datos, colecciones de objetos, XML, y más, utilizando una sintaxis que es similar a SQL, pero que se integra directamente en el código C#
+
+```c#
+var names = new List<string>(){
+    "Hedson","Daniela","Aitana","Leo"
+};
+
+// Esta consulta no se ejecuta hasta que se haga uso de la variable namesFiltered
+var namesFiltered = from n in names 
+                    where n.Length > 3 && n.Length < 8
+                    orderby n descending
+                    select n;
+
+// Si se desea ejecutar directamente (Considerar que afecta al rendimiento)
+var namesFiltered2 = (from n in names 
+                    orderby n descending
+                    select n).ToList();
+
+// Las consultas son tratadas como funciones por el compilador, por lo que tambien es valido:
+var namesFiltered3 = names.Where(n => n.Length>3 )
+                          .OrderByDescending(n => n)
+                          .Select(d => d);
+```
+
+```c#
+var numeros = new List<int> { 1, 2, 3, 4, 5 };
+var numerosPares = from n in numeros
+                   where n % 2 == 0
+                   select n;
+```
