@@ -44,3 +44,46 @@ Se pueden mandar los valores mediante la url anexando `?a=1&b=8` por el nombre d
 Finalmente el acceso es el siguiente segun la url en desarrollo: `https://localhost:7048/api/operation?a=1&b=8`
 
 ***Al acceder a la url con los parametros esperados, nos retornara el resultado de la suma en el navegador.***
+
+<br>
+
+## Solicitudes HTTP
+
+Se coloca una sentencia por cada metodo segun el verbo http que se requiera. 
+
+```c#
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace BackendNetAPI.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class OperationController : ControllerBase
+    {
+        [HttpGet]
+        public decimal Add(decimal a, decimal b) { 
+            return a + b;
+        }
+
+        [HttpPost]
+        public decimal Substract(decimal a, decimal b)
+        {
+            return a - b;
+        }
+
+        [HttpPut]
+        public decimal Edit(decimal a, decimal b)
+        {
+            return a * b;
+        }
+
+        [HttpDelete]
+        public decimal Delete(decimal a, decimal b)
+        {
+            return a / b;
+        }
+    }
+}
+
+```
