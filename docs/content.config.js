@@ -64,4 +64,9 @@ export const topics = [
         img: '/img/card-logo/astro-logo.png',
         path: '/docs/Astro'
     },
+    {
+        name: 'DataScience',
+        img: '/img/card-logo/data-science-logo.jpg',
+        path: '/docs/datascience'
+    }
 ];
