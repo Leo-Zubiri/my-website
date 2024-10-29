@@ -129,7 +129,6 @@ var miClaseList = new List<MiClase>();
 miClaseList.Add(new MiClase());
 ```
 
-<br>
 
 **Creando una clase generica**
 
@@ -208,7 +207,6 @@ Características clave de la programación funcional en C#:
 - **Expresiones lambda:** C# permite el uso de expresiones lambda, que son una forma concisa de definir funciones anónimas. Esto facilita la escritura de código funcional, especialmente al trabajar con colecciones y LINQ.
 - **Composición de funciones:** Se pueden combinar varias funciones para crear nuevas funciones, lo que permite construir soluciones complejas a partir de componentes más simples.
 
-<br>
 
 ### Funcion Pura
 
@@ -240,7 +238,6 @@ const time = () => new Data().toLocalTimeString()
 time() // siempre devuelve un resultado diferente
 ```
 
-<br>
 
 ### Funcion de primera clase
 
@@ -289,7 +286,6 @@ string Somefn(Func<string,string> fn, string message){
 }
 ```
 
-<br>
 
 
 ## Expresiones Lambda

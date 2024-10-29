@@ -2,7 +2,6 @@
 
 Desde Visual Studio se crea un nuevo proyecto de tipo `ASP .NET CORE Web API`. 
 
-<br>
 
 ## Controlador
 
@@ -34,7 +33,6 @@ namespace BackendNetAPI.Controllers
         }
     }
 }
-
 ```
 
 Al ser un metodo GET se puede acceder mediante el navegador y la URL que asp genera en automatico para el endpoint segun su nombre `/api/operation`.
@@ -45,7 +43,6 @@ Finalmente el acceso es el siguiente segun la url en desarrollo: `https://localh
 
 ***Al acceder a la url con los parametros esperados, nos retornara el resultado de la suma en el navegador.***
 
-<br>
 
 ## Solicitudes HTTP
 
@@ -85,5 +82,4 @@ namespace BackendNetAPI.Controllers
         }
     }
 }
-
 ```
