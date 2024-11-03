@@ -28,6 +28,13 @@ Data analysis isn't new. What is new is the vast quantity of data available from
 > - What data do we need to solve the problem?
 > - Where will that data come from?
 
+**An exceptional data acientist**
+Its a blend of
+- Curiosity
+- Computer scientist
+- Software engineer
+- Statistician
+- Storytelling
 
 **The process of gleaning isights from data**
 
@@ -47,3 +54,15 @@ Data analysis isn't new. What is new is the vast quantity of data available from
 - **Quantitative analysis**	A systematic approach using mathematical and statistical analysis is used to interpret numerical data. 	Many Paths to Data Science
 **Structured data** Data is organized and formatted into a predictable schema, usually related tables with rows and columns.
 - **Unstructured data**  Unorganized data that lacks a predefined data model or organization makes it harder to analyze using traditional methods. This data type often includes text, images, videos, and other content that doesn’t fit neatly into rows and columns like structured data.
+
+
+---
+
+## Regression
+
+Regression data analysis is a statistical method that examines the relationship between a dependent variable and one or more independent variables
+Regression captures the correlation between variables observed in a data set and quantifies whether those correlations are statistically significant or not. 
+
+**Example**: we can say that age and height can be described using a linear regression model. Since a person's height increases as age increases, they have a linear relationship
+
+![](./img/regression_example.png)
