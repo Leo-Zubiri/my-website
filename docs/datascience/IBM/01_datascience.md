@@ -66,3 +66,52 @@ Regression captures the correlation between variables observed in a data set and
 **Example**: we can say that age and height can be described using a linear regression model. Since a person's height increases as age increases, they have a linear relationship
 
 ![](./img/regression_example.png)
+
+
+---
+
+## Cloud
+
+Delivery of on-demand computing resources
+- Networks
+- Servers
+- Storage
+- Applications
+- Services
+- Data centers
+Over the Internet on a pay-for-use basis
+
+### What is Cloud computing
+
+Applications and data that users access over the Internet rather than locally
+- Online web apps
+- Secure online business applications
+- Storing personal files
+  - Google drive
+  - OneDrive
+  - Dropbox
+
+**Benefits**
+- No need to purchase applications and install them on local computer
+- Use online versions and pay a monthly subscription
+- More cost-effective
+- Access most current software versions
+- Save local storage space
+- Work collaboratively in real time
+
+**Essential characteristics**
+- on-demand self-service
+- broad network access
+- resource pooling
+- rapid elasticity
+- meseaured service
+
+**Deployment models**
+- public
+- private
+- hybrid
+
+**Cloud Service models**
+- **IaaS**. Infrastructure as a Service. You can access the infrastructure and physical computing resources such as servers, networking, storage, and data center space without the need to manage or operate them.
+- **PaaS**. Platform as a Service. You can access the platform that comprises the hardware and software tools that are usually needed to develop and deploy applications to users over the internet
+- **SaaS**. Software as a Service. Software licensing and delivery model in which software and applications are centrally hosted and licensed on a subscription basis.
