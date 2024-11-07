@@ -115,3 +115,23 @@ Applications and data that users access over the Internet rather than locally
 - **IaaS**. Infrastructure as a Service. You can access the infrastructure and physical computing resources such as servers, networking, storage, and data center space without the need to manage or operate them.
 - **PaaS**. Platform as a Service. You can access the platform that comprises the hardware and software tools that are usually needed to develop and deploy applications to users over the internet
 - **SaaS**. Software as a Service. Software licensing and delivery model in which software and applications are centrally hosted and licensed on a subscription basis.
+
+
+---
+
+## Big Data
+
+Big Data refers to the dynamic, large and disparate volumes of data being created by people, tools, and machines.
+
+The big data requires new, innovative, and scalable technology to collect, host, and analytically process the vast amount of data gathered in order to derive real-time business insights that relate to consumers, risk, profit, performance, productivity management, and enhanced shareholder value.
+
+
+**The V's of Big Data**
+
+Some elements that are common related with big data:
+
+- Velocity
+- Volume
+- Variety
+- Veracity
+- Value
