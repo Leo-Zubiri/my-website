@@ -135,3 +135,21 @@ Some elements that are common related with big data:
 - Variety
 - Veracity
 - Value
+
+### Processing tools
+
+The Big Data processing technologies provide ways to work with large sets of structured, semi-structured, and unstructured data so that value can be derived from big data.
+Exists open source technologies to deal with big data analytics
+- Apache Hadoop. Collection of tools that provides distributed storage and processing of big data
+- Apache Hive. Data warehouse for data query and analysis
+- Apache Spark. Distributed analytics framework for complex, real-time data analytics
+
+### Data mining goals
+
+- **Selecting data**. Identifying the right kind of data needed for data mining that could answer the questions at reasonable costs is critical.
+- **Preprocessing data**. Often raw data are messy, containing erroneous or irrelevant data. In addition, even with relevant data, information is sometimes missing. In the preprocessing stage, you identify the irrelevant attributes of data and expunge such attributes from further consideration.
+- **Transforming data**. The next step is to determine the appropriate format in which data must be stored. An important consideration in data mining is to reduce the number of attributes needed to explain the phenomena. Often you need to transform variables from one type to another. It may be prudent to transform the continuous variable for income into a categorical variable
+- **Storing data**. It is important to store data on servers or storage media that keeps the data secure and also prevents the data mining algorithm from unnecessarily searching for pieces of data scattered on different servers or storage media. Data safety and privacy should be a prime concern for storing data.
+- **Mining data**. This step covers data analysis methods, including parametric and non-parametric methods, and machine-learning algorithms. A good starting point for data mining is data visualization. Multidimensional views of the data using the advanced graphing capabilities of data mining software are very helpful in developing a preliminary understanding of the trends hidden in the data set.
+- **Evaluating mining results**. Formal evaluation could include testing the predictive capabilities of the models on observed data to see how effective and efficient the algorithms have been in reproducing data. In addition, the results are shared with the key stakeholders for feedback, which is then incorporated in the later iterations of data mining to improve the process.
+
