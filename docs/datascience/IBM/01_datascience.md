@@ -153,3 +153,13 @@ Exists open source technologies to deal with big data analytics
 - **Mining data**. This step covers data analysis methods, including parametric and non-parametric methods, and machine-learning algorithms. A good starting point for data mining is data visualization. Multidimensional views of the data using the advanced graphing capabilities of data mining software are very helpful in developing a preliminary understanding of the trends hidden in the data set.
 - **Evaluating mining results**. Formal evaluation could include testing the predictive capabilities of the models on observed data to see how effective and efficient the algorithms have been in reproducing data. In addition, the results are shared with the key stakeholders for feedback, which is then incorporated in the later iterations of data mining to improve the process.
 
+
+### Glossary
+
+**Big data clusters**. A distributed computing environment comprising thousands or tens of thousands of interconnected computers that collectively store and process large datasets.
+
+**Data replication**. A strategy in which data is duplicated across multiple nodes in a cluster to ensure data durability and availability, reducing the risk of data loss due to hardware failures
+
+**Distributed data**. The practice of dividing data into smaller chunks and distributing them across multiple computers within a cluster enables parallel processing for data analysis
+
+**Resource pooling**. A cloud characteristic where computing resources are shared and dynamically assigned to multiple consumers, promoting economies of scale and cost-efficiency.
