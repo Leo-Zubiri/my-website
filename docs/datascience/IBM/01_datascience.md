@@ -163,3 +163,29 @@ Exists open source technologies to deal with big data analytics
 **Distributed data**. The practice of dividing data into smaller chunks and distributing them across multiple computers within a cluster enables parallel processing for data analysis
 
 **Resource pooling**. A cloud characteristic where computing resources are shared and dynamically assigned to multiple consumers, promoting economies of scale and cost-efficiency.
+
+## Deep Learning and Machine learning
+
+**Data Science**. Is the process and method for extracting knowledge and insights from large volumes of disparate data. It could use machine learning algorithms and deep learning models. It is the entire data processing methodology
+
+**Artificial intelligence(AI)**. Includes everything that allows computers to learn how to solve problems and make intelligent decisions
+
+**Deep learning**. A specialized subset of Machine Learning that uses layered neural networks to simulate human decision-making
+
+**Neuronal networks**. It is a collection of small computing units called neurons that take incoming data and learn to make decisions over time
+
+### Generative AI
+
+Is a subset of artificial intelligence that focuses on producing new data rather than just analyzing existing data. It allows machines to create content:
+- images
+- music
+- language
+- computer code
+- and more.
+
+**How does Generative AI work?**
+- Generative adversarial networks (GANs)
+- Variational auto-encoders (VAEs)
+
+**Synthetic data**
+Data sets may not have enough data to build a model. Data scientist can augment their data sets using generative AI to create synthetic data based on real data. 
