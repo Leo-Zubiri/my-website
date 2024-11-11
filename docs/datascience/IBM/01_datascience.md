@@ -190,6 +190,25 @@ Is a subset of artificial intelligence that focuses on producing new data rather
 **Synthetic data**
 Data sets may not have enough data to build a model. Data scientist can augment their data sets using generative AI to create synthetic data based on real data. 
 
+## Data Science Application domains
+
+**Start using data science**
+- Identify the problem and establish a clear understandly of it
+- Gather the data for analysis
+- Identify the right tools to use
+- Develop a data strategy
+
+Data science and big data are making un undeniable impact on businesses, changing day to day operations, financial analytics and the interaction with costumers
+
+**Why organizations use data science**
+
+Discover optimal solutions to existing problems
+- Drive business goals
+- Improve efficiency
+- Make predictions
+- Save lives
+- Get competitive advantage
+
 
 ---
 
