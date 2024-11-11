@@ -189,3 +189,14 @@ Is a subset of artificial intelligence that focuses on producing new data rather
 
 **Synthetic data**
 Data sets may not have enough data to build a model. Data scientist can augment their data sets using generative AI to create synthetic data based on real data. 
+
+
+---
+
+## IBM Cloud Gallery
+
+**https://dataplatform.cloud.ibm.com/gallery**
+
+The IBM Cloud Gallery Resource Hub is a part of the IBM Cloud platform that provides sample data assets, notebooks, and projects. 
+
+![](./img/ibm-cloud-gallery.png)
