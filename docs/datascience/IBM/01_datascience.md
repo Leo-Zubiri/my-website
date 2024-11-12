@@ -209,6 +209,18 @@ Discover optimal solutions to existing problems
 - Save lives
 - Get competitive advantage
 
+**Clearly and logical reports**
+
+The report should present a thorough analysis of the data and communicate the project findings.
+
+A clearly organized and logical report should communicate the following to the reader:
+
+- What they gain by reading the report
+- Clearly defined goals
+- The significance of your contribution
+- Appropriate context by giving sufficient background 
+- Why this work is practical and useful
+- Conjecture plausible future developments that might result from your work  
 
 ---
 
