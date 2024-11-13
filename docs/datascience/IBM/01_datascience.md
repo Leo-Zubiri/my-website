@@ -224,6 +224,48 @@ A clearly organized and logical report should communicate the following to the r
 
 ---
 
+## A Roadmap to your Data Science Journey
+
+- **Personality characteristics**
+  - Curiosity is key
+  - Make sound arguments
+  - Use good judgement
+  - Familiarize with analytics platforms
+  - Storyteller
+  - Know your area of interests (such as healthcare or IT)
+- **Many paths**
+  - Diverse educational and career backgrounds
+  - Exposure to data challenges
+  - Sparked interest
+  - Data science is adaptable across professions
+- **Data Literacy**
+  - Analyze both structured and unstructured data
+  - Understand file formats
+  - Database and SQL skills
+  - Big Data, Cloud
+- **Tools & Techniques**
+  - Programming with Python and R
+  - Hadoop
+  - Python libraries: NumPy, pandas, scikit-learn
+  - Data visualization tools
+  - Machine learning algorithms
+  - Data preprocessing techniques
+- **Foundational Skills**
+  - Statistical knowledge
+  - Mathematics, Calculus, Linear Algebra
+  - Exploratory data analysis
+  - Select, train, and test models
+  - Communication and presentation skills
+- **Range of Tasks**
+  - Build Recommendation Engines
+  - Predictive Modeling
+  - Data Analysis and Problem Solving
+  - Identify Patterns
+  - Utilize External Data Sources
+  - Communication of Findings
+
+---
+
 ## IBM Cloud Gallery
 
 **https://dataplatform.cloud.ibm.com/gallery**
