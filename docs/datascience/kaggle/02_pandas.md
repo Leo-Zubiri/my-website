@@ -44,3 +44,41 @@ pd.Series([30, 35, 40], index=['2015 Sales', '2016 Sales', '2017 Sales'], name='
 ```
 
 ![](../img/kaggle_pandas_series2.png)
+
+
+---
+
+## Indexing, Selecting & Assigning
+
+Selecting specific values of a pandas DataFrame or Series to work on is an implicit step in almost any data operation you'll run, so one of the first things you need to learn in working with data in Python is how to go about selecting the data points relevant to you quickly and effectively.
+
+
+**reviews** dataframe:
+
+![](../img/kaggle_pandas_dataframe3.png)
+
+
+**These are the two ways of selecting a specific Series out of a DataFrame:**
+
+Columns in a pandas DataFrame works like a property of an object by accessing it as an attribute
+
+```py
+reviews.country
+```
+
+An alternvative:
+
+```py
+reviews['country']
+```
+
+
+![](../img/kaggle_pandas_dataframe4.png)
+
+
+
+To drill down to a single specific value, we need only use the indexing operator []:
+
+```py
+reviews['country'][0] #Italy
+```
