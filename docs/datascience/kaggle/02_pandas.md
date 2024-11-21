@@ -144,3 +144,46 @@ reviews.set_index("title")
 ```
 
 ![](../img/kaggle_pandas_setindex.png)
+
+
+#### Conditional Selection
+
+ To do interesting things with the data, we often need to ask questions based on conditions.
+
+This operation produced a Series of True/False booleans based on the country of each record:
+
+ ```py
+ reviews.country == 'Italy'
+ ```
+
+ ![](../img/kaggle_pandas_conditionalselection.png)
+
+
+This result can then be used inside of loc to select the relevant data:
+
+```py
+# Return all data where country is italy
+reviews.loc[reviews.country == 'Italy']
+
+# Evaluating two conditions with amperson (&)
+reviews.loc[(reviews.country == 'Italy') & (reviews.points >= 90)]
+
+# OR Evualuating with pipe |
+reviews.loc[(reviews.country == 'Italy') | (reviews.points >= 90)]
+
+#select data whose value "is in" a list of values
+reviews.loc[reviews.country.isin(['Italy', 'France'])]
+
+# isnull and notnull
+reviews.loc[reviews.price.notnull()]
+```
+
+### Assigning data
+
+```py
+# Create or modify values in column name `critic` with a default value
+reviews['critic'] = 'everyone'
+
+# With an iterable of values
+reviews['index_backwards'] = range(len(reviews), 0, -1)
+```
