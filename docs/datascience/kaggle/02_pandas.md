@@ -187,3 +187,64 @@ reviews['critic'] = 'everyone'
 # With an iterable of values
 reviews['index_backwards'] = range(len(reviews), 0, -1)
 ```
+
+## Summary Functions and Maps
+
+The data does not always come out of memory in the format we want it in right out of the bat. Sometimes we have to do some more work ourselves to reformat it for the task at hand.
+
+### Summary function
+
+```py
+# high-level summary of the attributes of the given column
+reviews.points.describe()
+
+# Get the mean of the column values
+reviews.points.mean()
+
+# To see a list of unique values 
+reviews.taster_name.unique()
+
+# To see a list of unique values and how often they occur in the dataset
+reviews.taster_name.value_counts()
+```
+
+### Maps
+
+A `map` is a term, borrowed from mathematics, for a function that takes one set of values and "maps" them to another set of values
+
+Affects each value from the Series and return a transformed version of that value. Returns a new Series where all the values have been transformed by your function.
+
+```py
+# Returning each value substracting 1
+reviews.points.map(lambda n: n - 1)
+```
+
+`apply()` is the equivalent method if we want to transform a whole DataFrame by calling a custom method on each row.
+
+> If we had called `reviews.apply()` with `axis='index'`, then instead of passing a function to transform each row, we would need to give a function to transform each column.
+
+```py
+# Function to access columns of a row and change the values
+def edit(row):
+    row.col1 = row.col1 - 1
+    row.col2 = row.col2 + 1
+    return row
+
+# Return all dataset with the modifications
+dataset.apply(edit, axis='columns')
+```
+
+**Note that map() and apply() return new, transformed Series and DataFrames, respectively.**
+
+Pandas provides many common mapping operations as built-ins. 
+
+```py
+# Substracting 1 directly 
+reviews.points - 1
+
+# Combining two cols
+reviews.col1 + " - " + reviews.col2
+```
+
+> These operators are faster than `map()` or `apply()` because they use speed ups built into pandas. All of the standard Python operators(>, <, ==, and so on) work in this manner. 
+> However, they are not as flexible as `map()` or `apply()`, which can do more advanced things, like applying conditional logic, which cannot be done with addition and subtraction alone.
