@@ -248,3 +248,33 @@ reviews.col1 + " - " + reviews.col2
 
 > These operators are faster than `map()` or `apply()` because they use speed ups built into pandas. All of the standard Python operators(>, <, ==, and so on) work in this manner. 
 > However, they are not as flexible as `map()` or `apply()`, which can do more advanced things, like applying conditional logic, which cannot be done with addition and subtraction alone.
+
+
+## Grouping and Sorting
+
+Maps allow us to transform data in a DataFrame or Series one value at a time for an entire column. However, often we want to group our data, and then do something specific to the group the data is in.
+
+
+### Groupwise analysis
+
+```py
+# Take all distinct points that appears and count the number of coincidences
+reviews.groupby('points').points.count()
+
+# To get the cheapest wine in each point value category
+reviews.groupby('points').price.min()
+
+# We can access the original dataframe after we grouped a slice of the original dataframe
+reviews.groupby('winery').apply(lambda df: df.title.iloc[0]) # get a column of the original dataframe based on the agrupation values
+
+# group by more than one column
+# best wine by country and province
+reviews.groupby(['country', 'province']).apply(lambda df: df.loc[df.points.idxmax()])
+
+# agg - aggregation functions
+# lets you run a bunch of different functions on your DataFrame simultaneously
+# generate a simple statistical summary of the dataset 
+reviews.groupby(['country']).price.agg([len, min, max])
+```
+
+
