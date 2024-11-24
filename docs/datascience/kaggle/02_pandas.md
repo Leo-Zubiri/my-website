@@ -277,4 +277,44 @@ reviews.groupby(['country', 'province']).apply(lambda df: df.loc[df.points.idxma
 reviews.groupby(['country']).price.agg([len, min, max])
 ```
 
+### Multi-indexes
 
+A multi-index differs from a regular index in that it has multiple levels. They require two levels of labels to retrieve a value.
+For example:
+
+```py
+countries_reviewed = reviews.groupby(['country', 'province']).description.agg([len])
+
+# Getting the datatype
+myIndex = countries_reviewed.index
+type(mi) # pandas.core.indexes.multi.MultiIndex
+```
+
+![](../img/kaggle_pandas_multiindex.png)
+
+
+**converting back to a regular index:**
+
+```py
+countries_reviewed.reset_index()
+```
+
+![](../img/kaggle_pandas_simpleindexx.png)
+
+
+### Sorting
+
+we can see that grouping returns data in index order, not in value order.
+
+```py
+countries_reviewed = countries_reviewed.reset_index()
+# Order by column 'len'
+countries_reviewed.sort_values(by='len')
+countries_reviewed.sort_values(by='len', ascending=False)
+
+# Order by index
+countries_reviewed.sort_index()
+
+# Order by more than one column
+countries_reviewed.sort_values(by=['country', 'len'])
+```
