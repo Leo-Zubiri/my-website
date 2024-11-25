@@ -318,3 +318,37 @@ countries_reviewed.sort_index()
 # Order by more than one column
 countries_reviewed.sort_values(by=['country', 'len'])
 ```
+
+## Data Types and Missing values
+
+The data type for a column in a DataFrame or a Series is known as the `dtype`. You can use the dtype property to grab the type of a specific column
+
+```py
+# Get the dtype of a specific column
+reviews.price.dtype # dtype('float64')
+
+# Get the dtype of all columns
+reviews.dtypes
+
+# convert a column of one type into another 
+reviews.points.astype('float64')
+```
+
+> One peculiarity to keep in mind is that columns consisting entirely of strings do not get their own type; they are instead given the `object` type.
+
+### Missing data
+
+Entries missing values are given the value `NaN`, short for **"Not a Number"**. For technical reasons these `NaN` values are always of the **float64** dtype.
+
+To select `NaN` entries you can use `pd.isnull()` (or its companion `pd.notnull()`).
+
+```py
+# Get the rows with mssing values into a specific column
+pd_dataframe[pd.isnull(pd_dataframe.col1)]
+
+# Replacing missing values
+pd_dataframe.col1.fillna("Valor")
+
+# Replacing a specific non-null value
+pd_dataframe.col1.replace("original_value","new_value")
+```
