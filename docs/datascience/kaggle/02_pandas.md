@@ -352,3 +352,51 @@ pd_dataframe.col1.fillna("Valor")
 # Replacing a specific non-null value
 pd_dataframe.col1.replace("original_value","new_value")
 ```
+
+## Renaming and Combining
+
+**renaming**
+
+Oftentimes data will come to us with column names, index names, or other naming conventions that we are not satisfied with.
+
+`rename()`
+
+```py
+# change index names and/or column names
+reviews.rename(columns={'points': 'score'})
+
+# rename() lets you rename index or column values by specifying a index or column keyword parameter
+reviews.rename(index={0: 'firstEntry', 1: 'secondEntry'})
+
+# the row index and the column index can have their own name attribute
+reviews.rename_axis("filas", axis='rows').rename_axis("cols", axis='columns')
+```
+
+**combining**
+
+Sometimes, we need to combine different DataFrames and/or Series in non-trivial ways. Pandas has three core methods for doing this.
+
+- concat()
+- join()
+- merge()
+
+
+```py
+# The simplest is concat(). we have data in different DataFrame or Series objects but having the same fields (columns)
+
+# Example
+canadian_youtube = pd.read_csv("../input/youtube-new/CAvideos.csv")
+british_youtube = pd.read_csv("../input/youtube-new/GBvideos.csv")
+
+pd.concat([canadian_youtube, british_youtube])
+```
+
+```py
+# join() lets you combine different DataFrame objects which have an index in common. 
+left = canadian_youtube.set_index(['title', 'trending_date'])
+right = british_youtube.set_index(['title', 'trending_date'])
+
+left.join(right, lsuffix='_CAN', rsuffix='_UK')
+```
+
+> The **lsuffix** and **rsuffix** parameters are necessary when the data has the same column names in both datasets
