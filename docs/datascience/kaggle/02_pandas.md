@@ -400,3 +400,77 @@ left.join(right, lsuffix='_CAN', rsuffix='_UK')
 ```
 
 > The **lsuffix** and **rsuffix** parameters are necessary when the data has the same column names in both datasets
+
+
+## Exercise
+
+[Ramen-ratings dataset](../kaggle/01_basic_data_exploration/ramen-ratings.csv)
+
+```py
+ramen_ratings = pd.read_csv('/input/ramen-ratings/ramen-ratings.csv')
+ramen_ratings.head()
+```
+
+![](../kaggle/01_basic_data_exploration/pd_exc_head.png)
+
+```py
+ramen_ratings.describe()
+
+ramen_ratings.columns
+# Index(['Review #', 'Brand', 'Variety', 'Style', 'Country', 'Stars', 'Top Ten'], dtype='object')
+```
+
+![](../kaggle/01_basic_data_exploration/pd_exc_describe.png)
+
+
+```py
+# Which brands are into the dataset and quantity of their apparitions 
+brand_count = ramen_ratings.groupby('Brand')['Brand'].count().reset_index(name='Count')
+brand_count.sort_values(by='Count',ascending=False).head(10)
+```
+
+![](../kaggle/01_basic_data_exploration/pd_exc_count.png)
+
+
+```py
+# Distinct countries into the dataset
+countries = ramen_ratings.Country.unique()
+"""
+array(['Japan', 'Taiwan', 'USA', 'India', 'South Korea', 'Singapore',
+       'Thailand', 'Hong Kong', 'Vietnam', 'Ghana', 'Malaysia',
+       'Indonesia', 'China', 'Nigeria', 'Germany', 'Hungary', 'Mexico',
+       'Fiji', 'Australia', 'Pakistan', 'Bangladesh', 'Canada', 'Nepal',
+       'Brazil', 'UK', 'Myanmar', 'Netherlands', 'United States',
+       'Cambodia', 'Finland', 'Sarawak', 'Philippines', 'Sweden',
+       'Colombia', 'Estonia', 'Holland', 'Poland', 'Dubai'], dtype=object)
+"""
+```
+
+```py
+# Distinct variations of ramen into the dataset
+ramen_variations = ramen_ratings.Variety.unique()
+ramen_variations
+
+"""
+array(["T's Restaurant Tantanmen ",
+       'Noodles Spicy Hot Sesame Spicy Hot Sesame Guan-miao Noodles',
+       'Cup Noodles Chicken Vegetable', ...,
+       'Hu Tiu Nam Vang ["Phnom Penh" style] Asian Style Instant\xa0Rice\xa0Noodles',
+       'Oriental Style Instant Noodles', 'Tom Yum Chili Flavor'],
+      dtype=object)
+"""
+```
+
+```py
+# Best style/ramen presentation rated
+ramen_ratings.Stars.dtype # object / string
+ramen_ratings.Stars.unique() # 'Unrated' value detected
+filtered_ds = ramen_ratings[ramen_ratings!='Unrated']
+filtered_ds['Stars'] = filtered_ds.Stars.astype('float64') # Modify column to set float dtype
+
+style_rated = filtered_ds.groupby(['Style']).agg({'Style':['count'],'Stars':['mean']})
+style_rated.columns = ['Count','Stars']
+style_rated.sort_values(by='Count',ascending=False)
+```
+
+![](../kaggle/01_basic_data_exploration/pd_exc_agg.png)
