@@ -84,3 +84,27 @@ Tools to track performance to maintain outdated models
 - **IBM Watson OpenScale:** As a platform for overseeing and managing AI models in production, Watson OpenScale plays a pivotal role in ensuring model fairness, explainability, and bias mitigation. It furnishes insights into model performance and drift over time, facilitating informed decision-making.
 
 - **IBM Watson Machine Learning:** Watson Machine Learning, available as a service on the IBM Cloud platform, enables users to scale their training and deployment of machine learning models. It seamlessly supports popular frameworks like TensorFlow, PyTorch, and scikit-learn, and offers APIs for seamless integration with other applications.
+
+
+### Development environments
+
+- Jupyter. The most famous development environment for data science. Its a tool for interactive python programming. Its a combination of documentation, code, shell commands and visualization in a single documentation
+- Jupyter lab. The next version of jupyter notebooks. Open different type of files, jupyter notebooks, data, terminals and then arrange them on the canvas.
+- Apache Zeppelin. A similar experience of jupyter notebooks but has an integrated plotting capability
+- R Studio. Runs R and all relationated libraries. Unifies programming, execution, debugging, remote data access, data exploration and visualization into one tool
+- Spyder. Similar functionalities from R Studio but implemented with python
+
+### Execution environments
+
+Sometimes your data doesn't fit into a single storage or main memory capacity, it's recommended to use a cluster execution environment
+
+- Apache Spark. 
+- Apache Flink
+- Ray
+
+### Fully Integrated Visual Tools
+
+Data integration and transformation + Data Visualization + Model Building
+
+- Knime
+- Orange
