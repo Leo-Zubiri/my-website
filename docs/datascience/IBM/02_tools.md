@@ -108,3 +108,47 @@ Data integration and transformation + Data Visualization + Model Building
 
 - Knime
 - Orange
+
+
+## Commercial tools for Data Science
+
+### Data Management
+
+- Oracle database
+- SQL Server
+- IBM DB2
+
+### Data integration and transformation
+
+Extract, Tranform and Load (ETL) tools
+
+- Informatica PowerCenter
+- IBM InfoSphere DataStage
+- SAP
+- Oracle
+- SAS
+- Talend
+- Microsoft products
+
+### Data Visualizaion
+
+- Tableu
+- PowerBI
+- IBM Cognos Analytics
+
+### Model Building
+
+- SPSS Modeler
+- Sas
+
+### Model monitoring and code asset management
+
+Model monitoring and the code asset management is a very new discipline, relevant commercial tools are no available.
+
+### Data Asset Management
+
+- Informatica Enterprise Data Governance
+
+### Development environments
+
+- IBM Watson Studio together with Watson Open Scale is a fully integrated tool covering the data sciencie life cycle
