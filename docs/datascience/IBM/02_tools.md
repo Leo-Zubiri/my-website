@@ -152,3 +152,56 @@ Model monitoring and the code asset management is a very new discipline, relevan
 ### Development environments
 
 - IBM Watson Studio together with Watson Open Scale is a fully integrated tool covering the data sciencie life cycle
+
+
+## Cloud Base Tools for Data Science
+
+### Fully integrated visual tools and platforms
+
+Large-scale execution of data science workflows happens in compute clusters
+
+- Watson Studio and Watson OpenScale, cover the complete development life cycle for all data science, machine learning, and AI tasks.
+- Azure Machine Learning. Fully cloud-hosted, supports the complete development life cycle of all data science.
+- H2O Driverless AI
+
+### Data management
+
+- Amazon DynamoDB
+- Cloudant
+- IBM DB2
+
+### Data Integration and transformation
+
+- Informatica
+- IBM Data Refinery
+
+### Data Visualization
+
+- Datameer
+- IBM Cognos Analytics
+- IBM Watson Studio
+
+### Model Building
+
+- IBM Watson Machine Learning
+- Google Cloud
+
+### Model deployment
+
+- IBM Watson Machine Learning
+
+### Model monitoring and assessment
+
+- Amazon SageMaker Model Monitor
+- Watson OpenScale
+
+
+## Data Science tools summary
+
+- Data Management Tools - Facilitates the storage, organization, and retrieval of data. Includes Relational Databases, NoSQL Databases, and Big Data platforms.
+- Data Integration and Transformation Tools - Streamlines data pipelines and automate data processing workflows. Task of data integration and transformation in the classic data warehousing world is to Extract, Transform, and Load (ETL).
+- Data Visualization Tools- Provides graphical representation of data and assist with communicating insights.
+- Model Deployment, Monitoring and Assessment Tools- Supports the building, deploying, monitoring, and evaluation of data and machine learning models.
+- Data Asset Management Tools- Organizes and manages data, enforce access controls, and ensure asset backups.
+- Code Development and Execution Tools - ProvideS environments for developing, testing, and deploying code, offering computational resources to execute it.
+- Code Asset Management Tools - Enables the storage and management of code, track changes, and support collaborative development
