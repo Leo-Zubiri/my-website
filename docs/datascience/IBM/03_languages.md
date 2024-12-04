@@ -19,3 +19,14 @@ You can develop the same programs from other languages with lesser code. Is a ge
 Large organizations that heavily use python include IBM, Wikipedia, Google, Yahoo, NASA, Facebook, Amazon, Instagram, Spotify and Reddit
 
 For data science, it has scientific computing libraries like pandas, numpy, scipy and matplotlib. For AI, libraries like TensorFlow, PyTorch, Keras and Scikit-learn. Also it can be used for natural language processing (NLP) using the NLTK toolkit
+
+
+## R
+
+Python is open source, while R is free software. Open source is more business focused while free software is more focused on a set of values
+
+R is for staticians, mathematicians, and data miners for developing statistical software, graphing and data analysis. 
+
+Companies like IBM, Google, Facebook, Microsoft, Bank of America, Ford, TechCrunch, Uber are using R.
+
+Is the largest repository of statistical knowledge and integrates well with other computer languages like C++, Java, C, .Net and Python
