@@ -30,3 +30,12 @@ R is for staticians, mathematicians, and data miners for developing statistical 
 Companies like IBM, Google, Facebook, Microsoft, Bank of America, Ford, TechCrunch, Uber are using R.
 
 Is the largest repository of statistical knowledge and integrates well with other computer languages like C++, Java, C, .Net and Python
+
+
+## SQL
+
+Structured Query Language
+
+It is simple and powerful, was designed for managing data in relational databases. It is used extensively for storing, manipulating and retrieving data.
+
+The syntax of the SQL you write may change based on the relational database management system you are using
