@@ -39,3 +39,16 @@ Structured Query Language
 It is simple and powerful, was designed for managing data in relational databases. It is used extensively for storing, manipulating and retrieving data.
 
 The syntax of the SQL you write may change based on the relational database management system you are using
+
+
+## Other languages
+
+Other lanagues what are used in data science
+
+- Java
+  - Weka (Data mining)
+  - Java-ML (ML Library)
+  - Apache MLlib (scalable ml)
+  - Deeplearning 4
+  - Hadoop. Manages data processing and storage for big data applications running in clustered systems
+
