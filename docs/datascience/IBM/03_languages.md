@@ -51,4 +51,21 @@ Other lanagues what are used in data science
   - Apache MLlib (scalable ml)
   - Deeplearning 4
   - Hadoop. Manages data processing and storage for big data applications running in clustered systems
-
+- Scala
+  - Support for functional programming
+  - Designed as an extension to Java
+  - Most popular program built with Scala is Apache Spark. 
+  - Designed to be faster than Hadoop
+- C++
+  - General purpose
+  - For data science, c++ applications are: Tensor Flow, MongoDB, Caffe (deep learning algorithm repository)
+- JS
+  - Core technology for the world wide web
+  - TensorFlow.js makes machine learning and deep learning possible in Node.js and in the browser
+  - brain.js and machinelearn.js
+  - R-js makes linear algebra possible in typescript
+- Julia
+  - Designed for high-performance numerical analysis and computational science
+  - Executes directly on the processor
+  - Calls C,Go,Java,MATLAB,R,Fortran and Python libraries with refined parallelism
+  - JuliaDB is a great application of Julia for Data Science
