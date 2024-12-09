@@ -29,4 +29,24 @@ An API, allows communication between two pieces of software. It is like a waiter
 
 REST APIs allow you to communicate through the internet and take advantage of resources like storage, data, artificially, intelligent algorithms, and much more
 
+
+## Data Sets
+
+A data set is a structured collection of data.
+
+Data embodies information represented as text, numbers or media such as images, audio or videos
+
+A tabular data set comprises a collection of rows containing columns that store de information. One popular tabular data format is **"comma separated values"** or **csv**.
    
+Over time, many public and private entities such as scientific institutions, governments, organizationgs, and even companies have started making data sets available to the public as "open data".
+
+Where to find open data:
+
+- Open data portal list from around the world
+  - https://datacatalogs.org/
+- Governamental, intergovernamental and organization websites
+  - https://data.un.org/
+  - https://data.gov/
+  - https://data.europa.eu/en
+- Kaggle: https://www.kaggle.com/datasets
+- Google data set search:  https://datasetsearch.research.google.com/
