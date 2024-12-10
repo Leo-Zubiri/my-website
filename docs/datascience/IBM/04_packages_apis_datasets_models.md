@@ -119,3 +119,33 @@ This license allows users to share a dataset only if they give credit to its cre
 
 **CREATIVE COMMONS ATTRIBUTION-NONCOMMERCIAL-NODERIVATIVES 4.0 INTERNATIONAL - CC BY-NC-ND**
 This license allows users to share a dataset only if they give credit to its creator(s). Users are not allowed to modify the dataset and are not allowed to use it for commercial purposes.
+
+
+## Data Asset eXchange(DAX)
+
+The IBM® Data Asset eXchange (DAX) is an online hub for developers and data scientists to find free and open data sets under open data licenses. A particular focus of the exchange is data sets under the Community Data License Agreement (CDLA).
+
+It also provides tutorial notebooks that walk through the basics of data cleaning, pre processing and exploratory analysis.
+
+https://developer.ibm.com/tutorials/getting-started-with-the-data-asset-exchange/
+
+
+## Machine learning Models
+
+Data contains a wealth of information, Machine Learning models identify patterns in data
+
+**Model training** is the process by which the model learns the data patterns. After a model is trained it can be used to make predictions
+
+Types of ML
+
+- Supervised. A human provides input data and correct outputs.
+  - Regression
+  - classification
+- Unsupervised. Model tries to identify patterns without external help
+  - Clustering
+- Reinforcement. Conceptually similar to human learning processes
+
+**Deep learning**. Tries to loosely emulate show the human brain works
+- Natural language processing
+- Image, audio and video analysis
+- Time series forecasting
