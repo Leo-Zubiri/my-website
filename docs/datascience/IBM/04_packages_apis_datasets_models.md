@@ -149,3 +149,23 @@ Types of ML
 - Natural language processing
 - Image, audio and video analysis
 - Time series forecasting
+
+## The Model Asset eXchange
+
+The Model Asset eXchange or MAX on the IBM Developer platform is a free open-source resource for deep learning models
+
+MAX is a free open source repository for ready-to-use, customizable deep learning microservices
+
+- Pre- or custom-trainable deep learning models
+- Fully tested, can be deployed in minutes
+- Approved for personal and commercial use
+
+On MAX, you can find models for a variety of domains, for example:
+
+- Object detection
+- Image, audio, video, and text classification
+- Named entity recognition
+- Image to text translation
+- Human pose detection
+
+
