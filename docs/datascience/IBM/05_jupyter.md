@@ -15,3 +15,12 @@ It's a browser based application that allows you to access multiple jupyter note
 Jupyter Notebooks can be used with cloud based services like IBM and Google Colab.
 
 > **Anaconda** is one of the popular distribution which includes Jupyter and Jupyter Lab, locally.
+
+
+## Jupyter Kernels
+
+A Kernel is a computational engine that executes the code contained in a Notebook file.
+
+When a notebook document opens, the related kernel launches automatically, the kernel performs the computation and produce the results.
+
+Depending on your settings you may need to install other notebooks languages in the jupyter environments.
