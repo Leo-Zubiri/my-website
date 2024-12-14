@@ -24,3 +24,18 @@ A Kernel is a computational engine that executes the code contained in a Noteboo
 When a notebook document opens, the related kernel launches automatically, the kernel performs the computation and produce the results.
 
 Depending on your settings you may need to install other notebooks languages in the jupyter environments.
+
+## Jupyter Architecture
+
+Implements a 2 process model.
+
+- Process Model
+  - Kernel. Executes the code and returns the results to the client for display
+  - Client. Interface in the browser. Send code to the kernel.
+
+Jupyter notebooks represent code, metadata, contents, and outputs
+
+When you save the Notebook, it is sent from your browser to the notebook server. It saves the notebook on a disk as a json file wih a **.ipynb** extension
+
+> The Jupyter Architecture uses the NB Convert tool to convert files to other formats. For example, convert a notebook into a HTML file, the notebook first it is modified by a preprocessor, then a exporter converts the notebook to the new file format. Finally, a postprocessor will work on the exported file to give the final output
+
