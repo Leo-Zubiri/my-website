@@ -39,3 +39,19 @@ When you save the Notebook, it is sent from your browser to the notebook server.
 
 > The Jupyter Architecture uses the NB Convert tool to convert files to other formats. For example, convert a notebook into a HTML file, the notebook first it is modified by a preprocessor, then a exporter converts the notebook to the new file format. Finally, a postprocessor will work on the exported file to give the final output
 
+
+## Aditional Jupyter Environments
+
+Computational Notebooks. Combine code, computational output, explanatory text, and multimedia resources in a single document.
+
+Popular tools for creating and modifying Jupyter Notebooks on a local device:
+- JupyterLab. Open source web-based application
+- VsCode
+
+### Anaconda
+
+Anaconda is an open-source distribution of Python and R programming languages that's used for: data science, machine learning, and artificial intelligence applications.
+
+Anaconda is designed to work seamlessly with Jupyter Notebooks. Anaconda is used by data scientists, statisticians, and researchers. It's considered a platform of choice for the world's largest organizations. 
+
+![](./img/anaconda.png)
