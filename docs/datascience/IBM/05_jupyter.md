@@ -55,3 +55,13 @@ Anaconda is an open-source distribution of Python and R programming languages th
 Anaconda is designed to work seamlessly with Jupyter Notebooks. Anaconda is used by data scientists, statisticians, and researchers. It's considered a platform of choice for the world's largest organizations. 
 
 ![](./img/anaconda.png)
+
+
+## Aditional Cloud Based Jupyter Environments
+
+Popular cloud-based environments used to create and modify Jupyter notebooks include:
+
+- JupyterLite. Lightweight tool built from JupyterLab components, executes entirely in the browser.
+  - https://jupyter.org/try-jupyter/lab/
+- Google Colaboratory (GoogleColab). Free jupyter notebook environment. Store on Google Drive and GitHub
+  - https://colab.research.google.com/
