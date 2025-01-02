@@ -1,3 +1,10 @@
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+export const PreviewPDF = ({path}) => (
+<embed src={useBaseUrl(path)} width="100%" height="800px" type="application/pdf" />
+);
+
+
 # Tools for Data Science
 
 Before it can be useful, raw data must pass through **The Data Science Task categories**
@@ -205,3 +212,10 @@ Large-scale execution of data science workflows happens in compute clusters
 - Data Asset Management Tools- Organizes and manages data, enforce access controls, and ensure asset backups.
 - Code Development and Execution Tools - ProvideS environments for developing, testing, and deploying code, offering computational resources to execute it.
 - Code Asset Management Tools - Enables the storage and management of code, track changes, and support collaborative development
+
+
+# Glossary Tools For Data Science
+
+[**Download Glossary** ](./assets/Glossary.pdf)
+
+<PreviewPDF path="assets/files/Glossary-b83947246a03a4f2693df487898a1b42.pdf"/>
