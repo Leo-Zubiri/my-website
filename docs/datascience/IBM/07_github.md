@@ -29,3 +29,17 @@ GitLab enables developers to:
 - Work from a local copy
 - Branch and merge code
 - Streamline testing and delivery with CI/CD
+
+
+# Git
+
+Git is a free, open-source version control system (VCS) that helps developers track changes to their code and projects
+
+## Branches
+
+A branch is a snapshot of your repository. It is a copy of the master branch and can be used to develop and test workflow changes before merging it into the master branch
+
+> Master branch is the official version of the project
+
+Branches allow for simultaneous development and testing by multiple team members
+
