@@ -68,5 +68,10 @@ export const topics = [
         name: 'DataScience',
         img: '/img/card-logo/data-science-logo.jpg',
         path: '/docs/datascience'
+    },
+    {
+        name: 'Flutter',
+        img: '/img/card-logo/flutter-logo.png',
+        path: '/docs/flutter'
     }
 ];
