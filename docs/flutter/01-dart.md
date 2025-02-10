@@ -22,15 +22,21 @@ void main() {
   
   // Tipado no estricto
   var myName = 'Hedson';
+  
   // Especificar que es tipo String
   String sname = 'Leonardo';
+  
   // Una vez establecido el valor no se puede cambiar
   final fname = 'Zubiri';
+  
   // Declarar variable final pero asignar valor posteriormente
   late final lfname;
   lfname = 'Valdez';
-  // Constante 
-  c
+  
+  // Constante
+  const fullname = 'Leo Zubiri';
+  
   print('Hola soy $myName $sname $fname $lfname');
+  print(fullname);
 }
 ```
