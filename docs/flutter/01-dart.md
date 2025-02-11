@@ -40,3 +40,30 @@ void main() {
   print(fullname);
 }
 ```
+
+### Tipos de variables
+
+```dart
+void main(){
+  final String nombre = 'Leo';
+  final int edad = 25;
+  final bool isOpenToWork = true;
+  bool? isBoolean = null; // Variable booleana que es nullable (acepta nulos)
+  
+  // Listado string distintas formas:
+  final mobilestack = ['android studio','flutter'];
+  final projects = <String>['PicNoteAPI','Laratomic Habits'];
+  final List<String> stack2 = <String>['React','Node.js'];
+  
+  // print multi linea
+  print("""
+  $nombre
+  $edad
+  $isOpenToWork
+  $isBoolean
+  $mobilestack
+  $projects
+  $stack2
+  """);
+}
+```
