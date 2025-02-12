@@ -41,7 +41,7 @@ void main() {
 }
 ```
 
-### Tipos de variables
+### Tipos de Datos
 
 ```dart
 void main(){
@@ -67,3 +67,9 @@ void main(){
   """);
 }
 ```
+
+**Dynamic Type**
+
+Tratar de evitarlo hasta donde sea posible para tener un mayor control del tipo de datos que se maneja en nuestra aplicacion
+
+El tipo dynamic acepta cualquier tipo de dato y por defecto tiene valor `null`
