@@ -88,3 +88,34 @@ void main() {
   """);
 }
 ```
+
+## MAPS
+
+Un mapa equivale a pares de valores, es decir, lo que en otros lenguajes serian los diccionarios.
+
+```dart
+void main() {
+  
+  final data = {
+    'name': 'Hedson',
+    'age': 25,
+
+  };
+  
+  // Tambien se puede tipar el tipo de dato del mapa
+  final Map<int,dynamic> data2 = {
+    1:'Uno',
+    2:'Dos',
+    3:'Tres',
+    4: {'Edad':25}
+  };  
+  print("""
+  $data
+  $data2
+  ${
+    // Acceder a un valor del mapa
+    data['name']
+  }
+  """);
+}
+```
