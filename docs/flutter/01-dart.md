@@ -73,3 +73,18 @@ void main(){
 Tratar de evitarlo hasta donde sea posible para tener un mayor control del tipo de datos que se maneja en nuestra aplicacion
 
 El tipo dynamic acepta cualquier tipo de dato y por defecto tiene valor `null`
+
+```dart
+void main() {
+  dynamic errorMessage = 'Hola';
+  errorMessage = true;
+  errorMessage = [1, 2, 3, 4, 5];
+  errorMessage = {1, 2, 3, 4, 5};
+  errorMessage = null;
+  errorMessage = () => true;
+
+  print("""
+  $errorMessage
+  """);
+}
+```
