@@ -119,3 +119,36 @@ void main() {
   """);
 }
 ```
+
+## List, Iterable y Sets
+
+Formas comunes de utilizar estas estructuras de datos:
+
+```dart
+void main() {
+  final numbers = [1,2,3,4,5,5,5,6,7,7,7,8,9,10];
+  
+  print(' Origal list $numbers');
+  print("""
+    Length: ${numbers.length}
+    Index 0: ${numbers[0]}
+    First: ${numbers.first}
+    Last: ${numbers.last}
+    Reversed: ${numbers.reversed}
+  """);
+  
+  // El reversed transformo el listado en un iterable
+  final iterable_numbers = numbers.reversed;
+  print("""
+    list_to_iterable: ${iterable_numbers}
+    iterable_to_list: ${iterable_numbers.toList()}
+    set: ${iterable_numbers.toSet()}
+  """);
+  
+  final numbersGreaterThan5 = numbers.where((n){
+    return n > 5;
+  });
+  
+  print(' >5: $numbersGreaterThan5');
+}
+```
