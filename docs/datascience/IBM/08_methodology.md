@@ -46,3 +46,17 @@ John Rollins, a seasoned IBM Senior Data Scientist.
    2. Does thje data model answer the initial business question, or must you adjust the data?
    3. Can you put the model into practice?
    4. Can you get constructive feedback from the data and the stakeholder to answer the business question?
+
+---
+
+### Business understanding
+
+The initial phase of data science methodology involves seeking clarification and understanding the goals, objectives, and requirements of a given task or problem.
+
+![](../IBM/img/1%20-%20Business%20Understanding.png)
+
+### Analytic approach
+
+The process of selecting the appropriate method or path to address a specific data science question or problem.
+
+![](../IBM/img/2%20-%20Analytical%20Approach.png)
